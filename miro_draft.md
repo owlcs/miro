@@ -112,7 +112,7 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 | **Example:** | Description of the audience. |
 ----
 
-## Scope, Requirements, Community
+## Scope, requirements, community
 
 ### Scope and coverage
 
@@ -139,4 +139,33 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 | **Description:** | Location of the email list and/or the issue tracking systems used for development and managing feature requests. |
 | **Importance:** | MUST |
 | **Example:** | http://www.ebi.ac.uk/efo/submit.html |
+----
+
+## Knowledge elicitation
+
+### Source knowledge
+
+|  | Specification |
+|---|---|
+| **Description:** | Detail on how the knowledge in the ontology was found, sorted, verified etc. |
+| **Importance:** | MUST |
+| **Example:** | Description of source, for example if experts were used, their broad qualifications (e.g. medical doctors). |
+----
+
+### Raw data location
+
+|  | Specification |
+|---|---|
+| **Description:** | The 'raw data' location, if applicable. |
+| **Importance:** | MUST |
+| **Example:** | Description of data gathered such as found in: https://softwareontology.wordpress.com/2011/04/04/an-agile-ontology/. |
+----
+
+### Feature prioritisation
+
+|  | Specification |
+|---|---|
+| **Description:** | The prioritisation of features. Which features were prioritised and how? |
+| **Importance:** | MUST |
+| **Example:** | Description of included/excluded features. Details of how decisions were reached. |
 ----
