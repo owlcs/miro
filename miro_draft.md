@@ -13,7 +13,7 @@ Chris Mungall, National Evolutionary Synthesis Center, Lawrence Berkeley Labs, G
 
 Nicolas Matentzoglu, Manchester University
 
-*** Edit history:
+**Edit history:**
 
 | Version | Date | Contributors | Changes |
 |---|---|---|---|
