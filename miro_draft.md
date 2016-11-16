@@ -33,7 +33,7 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | The full name of the ontology, including the version number referred to in the report. |
+| **Description:** | The full name of the ontology, including the acronym and the version number referred to in the report. |
 | **Importance:** | MUST |
 | **Example:** | Gene Ontology (GO), v2.13; Foundational Model of Anatomy Ontology (FMA), v4.22; |
 ----
@@ -65,5 +65,33 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 | **Example:** | http://www.berkeleybop.org/ontologies/doid.owl |
 ----
 
+### Ontology repository
+
+|  | Specification |
+|---|---|
+| **Description:** | The repository that is used to manage the different versions of the ontology. |
+| **Importance:** | MUST |
+| **Example:** | https://github.com/geneontology |
+----
+
+### Methodological framework
+
+|  | Specification |
+|---|---|
+| **Description:** | A prescribed ontology engineering methodology if used. |
+| **Importance:** | OPTIONAL |
+| **Example:** | OntoClean, Methontology |
+----
+
+## Motivation
+
+### Need
+
+|  | Specification |
+|---|---|
+| **Description:** | Details on why the ontology is needed. |
+| **Importance:** | MUST |
+| **Example:** | Description outlining the need, including examples of gaps in, for example, competency question form. |
+----
 
 
