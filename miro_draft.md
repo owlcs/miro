@@ -28,7 +28,32 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 
 ### Ontology name
 **Description:** The full name of the ontology, including the version number referred to in the report.
+
 **Importance:** MUST
+
 **Example:** Gene Ontology (GO), v2.13; Foundational Model of Anatomy Ontology (FMA), v4.22;
+
+### Ontology owner
+**Description:** The names and affiliations of the ontology owner and/or editors.
+
+**Importance:** MUST
+
+**Example:** Robert Stevens, University of Manchester is the owner and principal editor of the FHKB.
+
+### Ontology license
+**Description:** The licence under which the ontology is available.
+
+**Importance:** MUST
+
+**Example:** Creative Commons Attribution 3.0 (CC BY 3.0)
+
+### Ontology URL
+**Description:** The location where the ontology file is available.
+
+**Importance:** MUST
+
+**Example:** http://www.berkeleybop.org/ontologies/doid.owl
+
+
 
 
