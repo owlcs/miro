@@ -94,4 +94,49 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 | **Example:** | Description outlining the need, including examples of gaps in, for example, competency question form. |
 ----
 
+### Competition
 
+|  | Specification |
+|---|---|
+| **Description:** | If there is another ontology in the area, description on why the one being reported is needed instead/in addition. |
+| **Importance:** | MUST |
+| **Example:** | Justification as to why a competing ontology does not satisfy requirements. |
+----
+
+### Target audience
+
+|  | Specification |
+|---|---|
+| **Description:** |The target audience; who, what, where, when. Was the ontology developed specifically for use in an application or to accurately describe a specific domain of interest? |
+| **Importance:** | MUST |
+| **Example:** | Description of the audience. |
+----
+
+## Scope, Requirements, Community
+
+### Scope and coverage
+
+|  | Specification |
+|---|---|
+| **Description:** | Scope of the ontology including name of domain, granularity of representation and coverage extent. A high level (diagrammatic) visualisation is optional, but often helpful to illustrate the scope. |
+| **Importance:** | MUST |
+| **Example:** | This ontology represents a classification of infectious human diseases. It excludes related information such as organismal systems they affect. |
+----
+
+### Community
+
+|  | Specification |
+|---|---|
+| **Description:** | The community that is being engaged and how it is being done. |
+| **Importance:** | MUST |
+| **Example:** | Description of use scenarios gathered and competency questions, any consultations held, size of engagement. |
+----
+
+### Email list and issue tracking
+
+|  | Specification |
+|---|---|
+| **Description:** | Location of the email list and/or the issue tracking systems used for development and managing feature requests. |
+| **Importance:** | MUST |
+| **Example:** | http://www.ebi.ac.uk/efo/submit.html |
+----
