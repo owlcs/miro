@@ -6,8 +6,11 @@ MIRO – Minimal Information for Reporting of an Ontology
 
 **Editors**:
 Robert Stevens, Manchester University
+
 James Malone, FactBio
+
 Chris Mungall, National Evolutionary Synthesis Center, Lawrence Berkeley Labs, Gene Ontology Consortium
+
 Nicolas Matentzoglu, Manchester University
 
 *** Edit history:
