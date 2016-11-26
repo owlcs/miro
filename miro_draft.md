@@ -169,3 +169,190 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 | **Importance:** | MUST |
 | **Example:** | Description of included/excluded features. Details of how decisions were reached. |
 ----
+
+## Ontology content
+
+### KR language
+
+|  | Specification |
+|---|---|
+| **Description:** | The knowledge representation (KR) language used  and why. If the ontology is in OWL, indicate exact OWL Profile (EL, QL, RL), and potentially logical language (e.g. SROIQ, ALC; this is optional). |
+| **Importance:** | MUST |
+| **Example:** | OWL EL profile. |
+----
+
+### Development environment
+
+|  | Specification |
+|---|---|
+| **Description:** | The development environment used. |
+| **Importance:** | OPTIONAL |
+| **Example:** | Protégé, WebProtégé, TawnyOWL, TopBraid Composer, Swoop, etc. |
+----
+
+### Ontology metrics
+
+|  | Specification |
+|---|---|
+| **Description:** | Number of classes, properties, axioms, rules, individuals. |
+| **Importance:** | SHOULD |
+| **Example:** | Number of classes, properties, axioms, rules, individuals. |
+----
+
+### Imports and interoperability
+
+|  | Specification |
+|---|---|
+| **Description:** | Versions of external ontologies consumed in the ontology. Is the ontology aligned/compatible with other ontologies? |
+| **Importance:** | MUST |
+| **Example:** | Import of Uberon core – extended version, 2016-05-11 release. |
+----
+
+### Entity naming convention
+
+|  | Specification |
+|---|---|
+| **Description:** | Naming conventions for ontology entities. |
+| **Importance:** | MUST |
+| **Example:** | OBO Foundry naming conventions. |
+----
+
+### Identifier generation policy
+
+|  | Specification |
+|---|---|
+| **Description:** | The entity identifier generation policy. |
+| **Importance:** | MUST |
+| **Example:** | Incremental class number, using 10 digit number with ontology name as prefix. |
+----
+
+### Entity metadata policy
+
+|  | Specification |
+|---|---|
+| **Description:** | The entity metadata policy. |
+| **Importance:** | MUST |
+| **Example:** | Each class minimally requires a textual definition and a label. |
+----
+
+### Upper ontology
+
+|  | Specification |
+|---|---|
+| **Description:** | If an upper ontology used, which one is used and why. If not, why. |
+| **Importance:** | MUST |
+| **Example:** | SUMO, BFO. |
+----
+
+### Ontology relationships
+
+|  | Specification |
+|---|---|
+| **Description:** | The relationships used in the ontology, which were used and why. Were new relationships required? Why? |
+| **Importance:** | MUST |
+| **Example:** | The schema.org relationships were imported and used. |
+----
+
+### Axiom patterns 
+
+|  | Specification |
+|---|---|
+| **Description:** | Axiom or statement patterns used in describing ontology classes. If none were used, was the description ad hoc? |
+| **Importance:** | MUST |
+| **Example:** |  |
+----
+
+### Dereferencable IRIs 
+
+|  | Specification |
+|---|---|
+| **Description:** | Are dereferencable IRIs used? If not, why? Do you suggest any standard prefix (CURIE)? |
+| **Importance:** | OPTIONAL |
+| **Example:** | e.g. http://purl.obolibrary.org/obo/GO_0006915 |
+----
+
+## Managing Change
+
+### Sustainability plan 
+
+|  | Specification |
+|---|---|
+| **Description:** | Will the project be actively maintained and developed? Who will be responsible? Ideally, describe a sustainability plan for the next years. |
+| **Importance:** | MUST |
+| **Example:** | Outline of plan including method to sustain and who will be responsible. |
+----
+
+### Entity deprecation strategy 
+
+|  | Specification |
+|---|---|
+| **Description:** | Deprecation strategy for ontology entities. |
+| **Importance:** | MUST |
+| **Example:** | Use of owl:DeprecatedClass, no class deleted. |
+----
+
+### Versioning policy
+
+|  | Specification |
+|---|---|
+| **Description:** | The versioning policy of the ontology. |
+| **Importance:** | MUST |
+| **Example:** | Dated release number. |
+----
+
+## Quality Assurance
+
+### Testing
+
+|  | Specification |
+|---|---|
+| **Description:** | Description of testing performed on the ontology. |
+| **Importance:** | MUST |
+| **Example:** | Examples of competency questions that can be asked. Examples of inferences that can be made. |
+----
+
+### Evaluation
+
+|  | Specification |
+|---|---|
+| **Description:** | Evaluation of the ontology. Does the ontology accomplish the original requirements? If the ontology contains optional modules, indicate the exact configuration of the ontology (version of imports etc.) used for the evaluation. |
+| **Importance:** | MUST |
+| **Example:** | Description of the evaluation and how the ontology meets the ontology scope and requirements. |
+----
+
+### Example use
+
+|  | Specification |
+|---|---|
+| **Description:** | Examples of the ontology's usage. |
+| **Importance:** | MUST |
+| **Example:** | Example of data using the ontology. Example of an application using the ontology. |
+----
+
+### Institution endorsement
+
+|  | Specification |
+|---|---|
+| **Description:** | Is your ontology endorsed by the W3C, the OBO foundry or another institution? |
+| **Importance:** | OPTIONAL |
+| **Example:** | W3C recommendation. OBO Foundry library ontology.  |
+----
+
+### Logical consistency
+
+|  | Specification |
+|---|---|
+| **Description:** | Is the ontology logically consistent? Does it contain unsatisfiable classes. If so, why? |
+| **Importance:** | MUST |
+| **Example:** | Detail of reasoned used and status of satisfiability. |
+----
+
+### Evidence use
+
+|  | Specification |
+|---|---|
+| **Description:** | List active projects and applications using the ontology. Illustrate the added value. |
+| **Importance:** | MUST |
+| **Example:** | List of projects, links to websites. |
+----
+
