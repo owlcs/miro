@@ -92,25 +92,25 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 |---|---|
 | **Description:** | Description on why the ontology is needed. |
 | **Importance:** | MUST |
-| **Example:** | For example 2015 JBMS article "Unification of multi-species vertebrate anatomy ontologies for comparative biology in Uberon" has the following: "Here we present the unification of anatomy ontologies into Uberon, a single ontology resource that enables interoperability among disparate data and research groups." http://jbiomedsem.biomedcentral.com/articles/10.1186/2041-1480-5-21 |
+| **Example:** | For example the 2015 JBMS article "Unification of multi-species vertebrate anatomy ontologies for comparative biology in Uberon" has the following: "Here we present the unification of anatomy ontologies into Uberon, a single ontology resource that enables interoperability among disparate data and research groups." http://jbiomedsem.biomedcentral.com/articles/10.1186/2041-1480-5-21 |
 ----
 
 ### Competition
 
 |  | Specification |
 |---|---|
-| **Description:** | If there is another ontology in the area, description on why the one being reported is needed instead/in addition. |
+| **Description:** | If there is another ontology or ontologies in the same general area, the names and references of these ontologies together with a description on why the one being reported is needed instead or in addition. |
 | **Importance:** | MUST |
-| **Example:** | Justification as to why a competing ontology does not satisfy requirements. |
+| **Example:** | ** |
 ----
 
 ### Target audience
 
 |  | Specification |
 |---|---|
-| **Description:** |The target audience; who, what, where, when. Was the ontology developed specifically for use in an application or to accurately describe a specific domain of interest? |
+| **Description:** | For which task or use was the ontology developed. |
 | **Importance:** | MUST |
-| **Example:** | Description of the audience. |
+| **Example:** | For example the EFO 2010 Bioinformatics article, section 1.1 Motivation: the Gene Expression Atlas https://bioinformatics.oxfordjournals.org/content/26/8/1112.full |
 ----
 
 ## Scope, requirements, community
@@ -119,7 +119,7 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | Scope of the ontology including name of domain, granularity of representation and coverage extent. A high level (diagrammatic) visualisation is optional, but often helpful to illustrate the scope. |
+| **Description:** | Boundaries of the domain or field of interest, granularity of representation and coverage extent. A high level visualisation or tabular representation is optional, but often helpful to illustrate the scope. |
 | **Importance:** | MUST |
 | **Example:** | This ontology represents a classification of infectious human diseases. It excludes related information such as organismal systems they affect. |
 ----
@@ -197,7 +197,7 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 |---|---|
 | **Description:** | Number of classes, properties, axioms, rules, individuals. |
 | **Importance:** | SHOULD |
-| **Example:** | Number of classes, properties, axioms, rules, individuals. |
+| **Example:** | From the Human Phenotype Ontology NAR 2013 article "Human Phenotype Ontology provides a structured, comprehensive and well-defined set of 10,088 classes (terms) describing human phenotypic abnormalities and 13,326 subclass relations between the HPO classes." https://academic.oup.com/nar/article-lookup/doi/10.1093/nar/gkt1026  |
 ----
 
 ### Imports and interoperability
