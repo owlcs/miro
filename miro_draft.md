@@ -119,9 +119,9 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | Boundaries of the domain or field of interest, granularity of representation and coverage extent. A high level visualisation or tabular representation is optional, but often helpful to illustrate the scope. |
+| **Description:** | The domain or field of interest and the boundaries, granularity of representation and coverage extent. A high level visualisation or tabular representation is optional, but often helpful to illustrate the scope. |
 | **Importance:** | MUST |
-| **Example:** | This ontology represents a classification of infectious human diseases. It excludes related information such as organismal systems they affect. |
+| **Example:** | From the Human Phenotype Ontology NAR 2013 article "human phenotypic abnormalities." https://academic.oup.com/nar/article-lookup/doi/10.1093/nar/gkt1026  |
 ----
 
 ### Community
