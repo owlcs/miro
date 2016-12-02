@@ -52,7 +52,7 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | The licence under which the ontology is available. |
+| **Description:** | The licence which governs the permissions surrounding the ontology. |
 | **Importance:** | MUST |
 | **Example:** | Creative Commons Attribution 3.0 (CC BY 3.0) |
 ----
@@ -61,7 +61,7 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | The location where the ontology file is available. |
+| **Description:** | The web location where the ontology file is available. |
 | **Importance:** | MUST |
 | **Example:** | http://www.berkeleybop.org/ontologies/doid.owl |
 ----
@@ -70,7 +70,7 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | The repository that is used to manage the different versions of the ontology. |
+| **Description:** | The web location (URL) of the version control system where current and previous versions can be found. |
 | **Importance:** | MUST |
 | **Example:** | https://github.com/geneontology |
 ----
@@ -79,7 +79,7 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | A prescribed ontology engineering methodology if used. |
+| **Description:** | A description or name of the steps taken to organise the development of the ontology. |
 | **Importance:** | OPTIONAL |
 | **Example:** | OntoClean, Methontology |
 ----
@@ -90,9 +90,9 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | Details on why the ontology is needed. |
+| **Description:** | Description on why the ontology is needed. |
 | **Importance:** | MUST |
-| **Example:** | Description outlining the need, including examples of gaps in, for example, competency question form. |
+| **Example:** | For example 2015 JBMS article "Unification of multi-species vertebrate anatomy ontologies for comparative biology in Uberon" has the following: "Here we present the unification of anatomy ontologies into Uberon, a single ontology resource that enables interoperability among disparate data and research groups." http://jbiomedsem.biomedcentral.com/articles/10.1186/2041-1480-5-21 |
 ----
 
 ### Competition
