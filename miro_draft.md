@@ -5,6 +5,7 @@ MIRO – Minimal Information for Reporting of an Ontology
 ## Working draft 16 November 2016
 
 **Editors**:
+
 Robert Stevens, Manchester University
 
 James Malone, FactBio Limited
