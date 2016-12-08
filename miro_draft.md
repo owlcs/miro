@@ -205,7 +205,7 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | Versions of external ontologies consumed in the ontology. Is the ontology aligned/compatible with other ontologies? |
+| **Description:** | Versions of external ontologies consumed in the ontology. Is the ontology aligned/compatible with other ontologies used? |
 | **Importance:** | MUST |
 | **Example:** | Import of Uberon core – extended version, 2016-05-11 release. |
 ----
