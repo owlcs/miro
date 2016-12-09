@@ -149,45 +149,45 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | Detail on how the knowledge in the ontology was found, sorted, verified etc. |
+| **Description:** | Detail on how the knowledge in the ontology was gathered, sorted, verified etc. |
 | **Importance:** | MUST |
-| **Example:** | Description of source, for example if experts were used, their broad qualifications (e.g. medical doctors). |
+| **Example:** | Description of source in Materials and method section of article The Software Ontology (SWO): a resource for reproducibility in biomedical data analysis, curation and digital preservation in JMBS 2014 https://jbiomedsem.biomedcentral.com/articles/10.1186/2041-1480-5-25 |
 ----
 
-### Raw data location
+### Source knowledge location
 
 |  | Specification |
 |---|---|
-| **Description:** | The 'raw data' location, if applicable. |
+| **Description:** | The location whence the knowledge was gathered. |
 | **Importance:** | MUST |
 | **Example:** | Description of data gathered such as found in: https://softwareontology.wordpress.com/2011/04/04/an-agile-ontology/. |
 ----
 
-### Feature prioritisation
+### Content selection
 
 |  | Specification |
 |---|---|
-| **Description:** | The prioritisation of features. Which features were prioritised and how? |
+| **Description:** | The prioritisation of entities to be represented in the ontology and how that prioritisation was achieved. |
 | **Importance:** | MUST |
-| **Example:** | Description of included/excluded features. Details of how decisions were reached. |
+| **Example:** | Description of the prioritisation process for the Software Ontology in https://softwareontology.wordpress.com/2011/04/04/an-agile-ontology/ |
 ----
 
 ## Ontology content
 
-### KR language
+### Knowledge Representation language
 
 |  | Specification |
 |---|---|
-| **Description:** | The knowledge representation (KR) language used  and why. If the ontology is in OWL, indicate exact OWL Profile (EL, QL, RL), and potentially logical language (e.g. SROIQ, ALC; this is optional). |
+| **Description:** | What knowledge representation language was used and why. For a language like OWL indicate the OWL profile and expressivitiy. |
 | **Importance:** | MUST |
-| **Example:** | OWL EL profile. |
+| **Example:** | OWL version 2, EL profile. |
 ----
 
 ### Development environment
 
 |  | Specification |
 |---|---|
-| **Description:** | The development environment used. |
+| **Description:** | The tool(s) in developing the ontology. |
 | **Importance:** | OPTIONAL |
 | **Example:** | Protégé, WebProtégé, TawnyOWL, TopBraid Composer, Swoop, etc. |
 ----
