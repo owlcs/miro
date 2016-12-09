@@ -134,7 +134,7 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 | **Example:** | Table S1 in The Ontology for Biomedical Investigations article in PlOS One 2016. https://www.ncbi.nlm.nih.gov/pubmed/27128319|
 ----
 
-### Email list and issue tracking
+### Communication
 
 |  | Specification |
 |---|---|
