@@ -201,20 +201,20 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 | **Example:** | From the Human Phenotype Ontology NAR 2013 article "Human Phenotype Ontology provides a structured, comprehensive and well-defined set of 10,088 classes (terms) describing human phenotypic abnormalities and 13,326 subclass relations between the HPO classes." https://academic.oup.com/nar/article-lookup/doi/10.1093/nar/gkt1026  |
 ----
 
-### Imports and interoperability
+### Incorporation of other ontology
 
 |  | Specification |
 |---|---|
-| **Description:** | Versions of external ontologies consumed in the ontology. Is the ontology aligned/compatible with other ontologies used? |
+| **Description:** | Versions of external ontologies imported into the ontology and where. |
 | **Importance:** | MUST |
-| **Example:** | Import of Uberon core – extended version, 2016-05-11 release. |
+| **Example:** | Import of Uberon core – extended version, 2016-05-11 release under the 'anatomical entity' class. |
 ----
 
 ### Entity naming convention
 
 |  | Specification |
 |---|---|
-| **Description:** | Naming conventions for ontology entities. |
+| **Description:** | Describe the naming scheme for the entites in the ontology, capturing orthography, organisation rules, acronyms, and so on. |
 | **Importance:** | MUST |
 | **Example:** | OBO Foundry naming conventions. |
 ----
@@ -223,9 +223,9 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | The entity identifier generation policy. |
+| **Description:** | What is the scheme used for creating identifiers for entities in the ontology. State whether identifiers are semantic-free or meaningful. |
 | **Importance:** | MUST |
-| **Example:** | Incremental class number, using 10 digit number with ontology name as prefix. |
+| **Example:** | Incremental class number, using 10 digit number with ontology name as the prefix. |
 ----
 
 ### Entity metadata policy
