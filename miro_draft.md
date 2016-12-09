@@ -129,9 +129,9 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | The community that is being engaged and how it is being done. |
+| **Description:** | The target audience; the use cases the ontology will support; the competency questions or requirements the ontology fulfills. |
 | **Importance:** | MUST |
-| **Example:** | Description of use scenarios gathered and competency questions, any consultations held, size of engagement. |
+| **Example:** | Table S1 in The Ontology for Biomedical Investigations article in PlOS One 2016. https://www.ncbi.nlm.nih.gov/pubmed/27128319|
 ----
 
 ### Email list and issue tracking
