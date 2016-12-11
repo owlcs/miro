@@ -308,7 +308,7 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | Description of testing performed on the ontology. |
+| **Description:** | Description of procedure used to judge whether the ontology achieves the claims made for the ontology. State, for example, whether the ontology answers the queries it claims to answer; is the ontology consistent, with all classes satisfiable, and with all necesssary subsumptions in place. |
 | **Importance:** | MUST |
 | **Example:** | Examples of competency questions that can be asked. Examples of inferences that can be made. |
 ----
@@ -317,7 +317,7 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | Evaluation of the ontology. Does the ontology accomplish the original requirements? If the ontology contains optional modules, indicate the exact configuration of the ontology (version of imports etc.) used for the evaluation. |
+| **Description:** | Describe whether or not the ontology meets its stated requirements, competency questions  and goals. State whether the use cases given for the ontology can be met. The description of the evaluation may involve user studies. |
 | **Importance:** | MUST |
 | **Example:** | Description of the evaluation and how the ontology meets the ontology scope and requirements. |
 ----
@@ -326,7 +326,7 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | Examples of the ontology's usage. |
+| **Description:** | Examples An illustration of the ontology in use in its intended application setting or use case. |
 | **Importance:** | MUST |
 | **Example:** | Example of data using the ontology. Example of an application using the ontology. |
 ----
@@ -335,7 +335,7 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | Is your ontology endorsed by the W3C, the OBO foundry or another institution? |
+| **Description:** | State whether the ontology is endorsed by the W3C, the OBO foundry or another institution. |
 | **Importance:** | OPTIONAL |
 | **Example:** | W3C recommendation. OBO Foundry library ontology.  |
 ----
