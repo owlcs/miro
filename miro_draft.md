@@ -80,7 +80,7 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | A description or name of the steps taken to organise the development of the ontology. |
+| **Description:** | A A name or description of the steps taken to develop the ontology. |
 | **Importance:** | OPTIONAL |
 | **Example:** | OntoClean, Methontology |
 ----
@@ -91,7 +91,7 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | Description of why the ontology is needed. |
+| **Description:** | Justification of why the ontology is needed. |
 | **Importance:** | MUST |
 | **Example:** | For example the 2015 JBMS article "Unification of multi-species vertebrate anatomy ontologies for comparative biology in Uberon" has the following: "Here we present the unification of anatomy ontologies into Uberon, a single ontology resource that enables interoperability among disparate data and research groups." http://jbiomedsem.biomedcentral.com/articles/10.1186/2041-1480-5-21 |
 ----
@@ -138,7 +138,7 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | Location of the email list and/or the issue tracking systems used for development and managing feature requests. |
+| **Description:** | Location, usually URL,  of the email list and/or the issue tracking systems used for development and managing feature requests. |
 | **Importance:** | MUST |
 | **Example:** | http://www.ebi.ac.uk/efo/submit.html |
 ----
@@ -178,7 +178,7 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | What knowledge representation language was used and why. For a language like OWL indicate the OWL profile and expressivitiy. |
+| **Description:** | What knowledge representation language was used and why. For a language like OWL indicate the OWL profile and expressivity. |
 | **Importance:** | MUST |
 | **Example:** | OWL version 2, EL profile. |
 ----
@@ -187,7 +187,7 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | The tool(s) in developing the ontology. |
+| **Description:** | The tool(s) used in developing the ontology. |
 | **Importance:** | OPTIONAL |
 | **Example:** | Protégé, WebProtégé, TawnyOWL, TopBraid Composer, Swoop, etc. |
 ----
@@ -201,11 +201,11 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 | **Example:** | From the Human Phenotype Ontology NAR 2013 article "Human Phenotype Ontology provides a structured, comprehensive and well-defined set of 10,088 classes (terms) describing human phenotypic abnormalities and 13,326 subclass relations between the HPO classes." https://academic.oup.com/nar/article-lookup/doi/10.1093/nar/gkt1026  |
 ----
 
-### Incorporation of other ontology
+### Incorporation of other ontologies
 
 |  | Specification |
 |---|---|
-| **Description:** | Versions of external ontologies imported into the ontology and where. |
+| **Description:** | Versions of external ontologies imported into the ontology and where they are placed in the host ontology. |
 | **Importance:** | MUST |
 | **Example:** | Import of Uberon core – extended version, 2016-05-11 release under the 'anatomical entity' class. |
 ----
@@ -214,7 +214,7 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | Describe the naming scheme for the entites in the ontology, capturing orthography, organisation rules, acronyms, and so on. |
+| **Description:** | Describe the naming scheme for the entities in the ontology, capturing orthography, organisation rules, acronyms, and so on. |
 | **Importance:** | MUST |
 | **Example:** | OBO Foundry naming conventions. |
 ----
@@ -232,25 +232,25 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | The entity metadata policy. |
+| **Description:** | What metadata for each entity is to be present. This could include, but not be limited to: A natural language definition, editor, edit history, examples, entity lable and synonyms, etc. |
 | **Importance:** | MUST |
-| **Example:** | Each class minimally requires a textual definition and a label. |
+| **Example:** | *there must be a GO thing for this* Each class minimally requires a textual definition and a label. |
 ----
 
 ### Upper ontology
 
 |  | Specification |
 |---|---|
-| **Description:** | If an upper ontology used, which one is used and why. If not, why. |
+| **Description:** | If an upper ontology is used, which one is used and why is it used? If not, why. |
 | **Importance:** | MUST |
-| **Example:** | SUMO, BFO. |
+| **Example:** | SUMO, BFO. *an example sentence would be good.* |
 ----
 
 ### Ontology relationships
 
 |  | Specification |
 |---|---|
-| **Description:** | The relationships used in the ontology, which were used and why. Were new relationships required? Why? |
+| **Description:** | The relationships or properties used in the ontology, which were used and why? Were new relationships required? Why? |
 | **Importance:** | MUST |
 | **Example:** | The schema.org relationships were imported and used. |
 ----
@@ -279,7 +279,7 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | Will the project be actively maintained and developed? Who will be responsible? Ideally, describe a sustainability plan for the next years. |
+| **Description:** | State whether the ontology wil be actively maintained and developed. Describe a plan for how the ontology will be kept up to date. |
 | **Importance:** | MUST |
 | **Example:** | Outline of plan including method to sustain and who will be responsible. |
 ----
@@ -288,7 +288,7 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | Deprecation strategy for ontology entities. |
+| **Description:** | Describe the procedures for managing entities that become removed, split, redefined. |
 | **Importance:** | MUST |
 | **Example:** | Use of owl:DeprecatedClass, no class deleted. |
 ----
