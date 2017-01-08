@@ -71,7 +71,7 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | The web location (URL) of the version control system where current and previous versions can be found. |
+| **Description:** | The web location (URL) of the version control system where current and previous versions of the ontology can be found. |
 | **Importance:** | MUST |
 | **Example:** | https://github.com/geneontology |
 ----
@@ -80,7 +80,7 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | A A name or description of the steps taken to develop the ontology. |
+| **Description:** | A name or description of the steps taken to develop the ontology. |
 | **Importance:** | OPTIONAL |
 | **Example:** | OntoClean, Methontology |
 ----
@@ -91,7 +91,7 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | Justification of why the ontology is needed. |
+| **Description:** | Justification of why the ontology is required. |
 | **Importance:** | MUST |
 | **Example:** | For example the 2015 JBMS article "Unification of multi-species vertebrate anatomy ontologies for comparative biology in Uberon" has the following: "Here we present the unification of anatomy ontologies into Uberon, a single ontology resource that enables interoperability among disparate data and research groups." http://jbiomedsem.biomedcentral.com/articles/10.1186/2041-1480-5-21 |
 ----
@@ -100,45 +100,45 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | If there is another ontology or ontologies in the same general area, the names and references of these ontologies together with a description on why the one being reported is needed instead or in addition. |
+| **Description:** | The names and references for other ontology or ontologies in the same general area as the one being reported upon, together with a description on why the one being reported is needed instead or in addition to the others. |
 | **Importance:** | MUST |
-| **Example:** | ** |
+| **Example:** | to be done |
 ----
 
 ### Target audience
 
 |  | Specification |
 |---|---|
-| **Description:** | For which task or use was the ontology developed. |
+| **Description:** | For which community or organisation performing some task or use was the ontology developed. |
 | **Importance:** | MUST |
-| **Example:** | For example the EFO 2010 Bioinformatics article, section 1.1 Motivation: the Gene Expression Atlas https://bioinformatics.oxfordjournals.org/content/26/8/1112.full |
+| **Example:** | The Gene Ontology is used by curators of gene products to describe the major functional attributes of those gene products to provide a common language across species for describing the molecular function, biological process and cellular location of gene products. |
 ----
 
-## Scope, requirements, community
+## Scope, requirements, development community
 
 ### Scope and coverage
 
 |  | Specification |
 |---|---|
-| **Description:** | The domain or field of interest and the boundaries, granularity of representation and coverage extent. A high level visualisation or tabular representation is optional, but often helpful to illustrate the scope. |
+| **Description:** | The domain or field of interest for the ontology and the boundaries, granularity of representation and coverage of the ontology. State the requirements of the ontology, such as the competency questions it should satisfy. A high level visualisation or tabular representation is optional, but often helpful to illustrate the scope. |
 | **Importance:** | MUST |
 | **Example:** | From the Human Phenotype Ontology NAR 2013 article "human phenotypic abnormalities." https://academic.oup.com/nar/article-lookup/doi/10.1093/nar/gkt1026  |
 ----
 
-### Community
+### Development community
 
 |  | Specification |
 |---|---|
-| **Description:** | The target audience; the use cases the ontology will support; the competency questions or requirements the ontology fulfills. |
+| **Description:** | The person, group of people or organisation that create the ontology. |
 | **Importance:** | MUST |
-| **Example:** | Table S1 in The Ontology for Biomedical Investigations article in PlOS One 2016. https://www.ncbi.nlm.nih.gov/pubmed/27128319|
+| **Example:** | The Gene Ontology is developed by the Gene Ontology Consortium. |
 ----
 
 ### Communication
 
 |  | Specification |
 |---|---|
-| **Description:** | Location, usually URL,  of the email list and/or the issue tracking systems used for development and managing feature requests. |
+| **Description:** | Location, usually URL,  of the email list and/or the issue tracking systems used for development and managing feature requests for the ontology. |
 | **Importance:** | MUST |
 | **Example:** | http://www.ebi.ac.uk/efo/submit.html |
 ----
@@ -151,14 +151,14 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 |---|---|
 | **Description:** | Detail on how the knowledge in the ontology was gathered, sorted, verified etc. |
 | **Importance:** | MUST |
-| **Example:** | Description of source in Materials and method section of article The Software Ontology (SWO): a resource for reproducibility in biomedical data analysis, curation and digital preservation in JMBS 2014 https://jbiomedsem.biomedcentral.com/articles/10.1186/2041-1480-5-25 |
+| **Example:** | Description of source in the Materials and method section of the article for The Software Ontology (SWO): a resource for reproducibility in biomedical data analysis, curation and digital preservation in JMBS 2014 https://jbiomedsem.biomedcentral.com/articles/10.1186/2041-1480-5-25 |
 ----
 
 ### Source knowledge location
 
 |  | Specification |
 |---|---|
-| **Description:** | The location whence the knowledge was gathered. |
+| **Description:** | The location of the source whence the knowledge was gathered. |
 | **Importance:** | MUST |
 | **Example:** | Description of data gathered such as found in: https://softwareontology.wordpress.com/2011/04/04/an-agile-ontology/. |
 ----
@@ -167,7 +167,7 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | The prioritisation of entities to be represented in the ontology and how that prioritisation was achieved. |
+| **Description:** | The prioritisation of entities to be represented in the ontology and how that prioritisation was achieved. Some knowledge is more important or of greater priority to be in the ontology to support the requirements of that ontology. |
 | **Importance:** | MUST |
 | **Example:** | Description of the prioritisation process for the Software Ontology in https://softwareontology.wordpress.com/2011/04/04/an-agile-ontology/ |
 ----
@@ -196,7 +196,7 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | Number of classes, properties, axioms, rules and individuals. |
+| **Description:** | Number of classes, properties, axioms and types of axioms, rules and individuals in the ontology. |
 | **Importance:** | SHOULD |
 | **Example:** | From the Human Phenotype Ontology NAR 2013 article "Human Phenotype Ontology provides a structured, comprehensive and well-defined set of 10,088 classes (terms) describing human phenotypic abnormalities and 13,326 subclass relations between the HPO classes." https://academic.oup.com/nar/article-lookup/doi/10.1093/nar/gkt1026  |
 ----
@@ -259,18 +259,18 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | Axiom or statement patterns used in describing ontology classes. If none were used, was the description ad hoc? |
+| **Description:** | Regular collections of axiom or statement used in describing ontology classes. If none were used, was the description ad hoc? |
 | **Importance:** | MUST |
-| **Example:** |  |
+| **Example:** | The axiom patterns described in Section XX for the Software Ontology in its JBMS paper.  |
 ----
 
 ### Dereferencable IRIs 
 
 |  | Specification |
 |---|---|
-| **Description:** | Are dereferencable IRIs used? If not, why? Do you suggest any standard prefix (CURIE)? |
+| **Description:** | State whether or not the IRI used are dereferencable to a Web resource. Provide any standard prefix (CURIE). |
 | **Importance:** | OPTIONAL |
-| **Example:** | e.g. http://purl.obolibrary.org/obo/GO_0006915 |
+| **Example:** | For example, http://purl.obolibrary.org/obo/GO_0006915 |
 ----
 
 ## Managing Change
@@ -288,18 +288,18 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | Describe the procedures for managing entities that become removed, split, redefined. |
+| **Description:** | Describe the procedures for managing entities that become removed, split or redefined. |
 | **Importance:** | MUST |
-| **Example:** | Use of owl:DeprecatedClass, no class deleted. |
+| **Example:** | The owl:DeprecatedClass; no class is deleted from the ontology, but deprecated classes are labelled as obselete with an annotation property. |
 ----
 
 ### Versioning policy
 
 |  | Specification |
 |---|---|
-| **Description:** | The versioning policy of the ontology. |
+| **Description:** | The policy that governs when new versions of the ontology are created and released. |
 | **Importance:** | MUST |
-| **Example:** | Dated release number. |
+| **Example:** | to be done.  |
 ----
 
 ## Quality Assurance
@@ -317,44 +317,44 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | Describe whether or not the ontology meets its stated requirements, competency questions  and goals. State whether the use cases given for the ontology can be met. The description of the evaluation may involve user studies. |
+| **Description:** | A determination of whether the ontology is of value and significance. An evaluation should show that the motivation is justified and that the objectives of the ontology's development are met effectively and satisfactorily. Describe whether or not the ontology meets its stated requirements, competency questions  and goals.  |
 | **Importance:** | MUST |
-| **Example:** | Description of the evaluation and how the ontology meets the ontology scope and requirements. |
+| **Example:** |  to be done. |
 ----
 
-### Example use
+### Example of use
 
 |  | Specification |
 |---|---|
-| **Description:** | Examples An illustration of the ontology in use in its intended application setting or use case. |
+| **Description:** | An illustration of the ontology in use in its intended application setting or use case. |
 | **Importance:** | MUST |
-| **Example:** | Example of data using the ontology. Example of an application using the ontology. |
+| **Example:** | to Table S1 in The Ontology for Biomedical Investigations article in PlOS One 2016 https://www.ncbi.nlm.nih.gov/pubmed/27128319 shows the projects using OBI. |
 ----
 
-### Institution endorsement
+### Institutional endorsement
 
 |  | Specification |
 |---|---|
-| **Description:** | State whether the ontology is endorsed by the W3C, the OBO foundry or another institution. |
+| **Description:** | State whether the ontology is endorsed by the W3C, the OBO foundry or some organisation representing a community. . |
 | **Importance:** | OPTIONAL |
-| **Example:** | W3C recommendation. OBO Foundry library ontology.  |
+| **Example:** | SNOMED is mandated for use by many national health organisations.   |
 ----
 
 ### Logical consistency
 
 |  | Specification |
 |---|---|
-| **Description:** | Is the ontology logically consistent? Does it contain unsatisfiable classes. If so, why? |
+| **Description:** | An ontology is consistent if there is a model that can satisfy all the axioms of an ontology. an automated reasoner, in a tool such as Protege 4, will show an ontology   to be logically inconsistent if the ontology contains a class that cannot have any individuals. |
 | **Importance:** | MUST |
-| **Example:** | Detail of reasoned used and status of satisfiability. |
+| **Example:** | Detail of reasoner used and status of satisfiability. "The ontology was submitted to Pellet, ELK and HerMiT and found to be logically consistent with no unsatisfiable classes. |
 ----
 
-### Evidence use
+### Evidence of use
 
 |  | Specification |
 |---|---|
-| **Description:** | List active projects and applications using the ontology. Illustrate the added value. |
+| **Description:** | An illustration of the active projects and applications that use the ontology.   |
 | **Importance:** | MUST |
-| **Example:** | List of projects, links to websites. |
+| **Example:** | The Gene Ontology is used to annotate the gene products for their molecular function, biological process and cellular component in many species specific and cross species databases. |
 ----
 
