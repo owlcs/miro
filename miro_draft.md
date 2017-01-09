@@ -81,7 +81,7 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 |  | Specification |
 |---|---|
 | **Description:** | A name or description of the steps taken to develop the ontology. |
-| **Importance:** | OPTIONAL |
+| **Importance:** | MUST |
 | **Example:** | OntoClean, Methontology |
 ----
 
