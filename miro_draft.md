@@ -44,7 +44,7 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | The names and affiliations (where appropriate) of the person, people or consortium that manager the ontology and their contact details. |
+| **Description:** | The names, affiliations (where appropriate) and contact details of the person, people or consortium that manage the development of the ontology. |
 | **Importance:** | MUST |
 | **Example:** | GO Administrators, go@geneontology.org |
 ----
@@ -100,16 +100,16 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | The names and references for other ontology or ontologies in the same general area as the one being reported upon, together with a description on why the one being reported is needed instead or in addition to the others. |
+| **Description:** | The names and citations for other ontology or ontologies in the same general area as the one being reported upon, together with a description on why the one being reported is needed instead or in addition to the others. |
 | **Importance:** | MUST |
-| **Example:** | to be done |
+| **Example:** | The background section to the paper "The Software Ontology (SWO): a resource for reproducibility in biomedical data analysis, curation and digital preservation" in JMBS 2014 describes other attempts to describe software in ontologies or vocabularies. See http://jbiomedsem.biomedcentral.com/articles/10.1186/2041-1480-5-25 |
 ----
 
 ### Target audience
 
 |  | Specification |
 |---|---|
-| **Description:** | For which community or organisation performing some task or use was the ontology developed. |
+| **Description:** | The community or organisation performing some task or use for which the ontology was developed. |
 | **Importance:** | MUST |
 | **Example:** | The Gene Ontology is used by curators of gene products to describe the major functional attributes of those gene products to provide a common language across species for describing the molecular function, biological process and cellular location of gene products. |
 ----
@@ -149,7 +149,7 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | Detail on how the knowledge in the ontology was gathered, sorted, verified etc. |
+| **Description:** | How the knowledge in the ontology was gathered, sorted, verified etc. |
 | **Importance:** | MUST |
 | **Example:** | Description of source in the Materials and method section of the article for The Software Ontology (SWO): a resource for reproducibility in biomedical data analysis, curation and digital preservation in JMBS 2014 https://jbiomedsem.biomedcentral.com/articles/10.1186/2041-1480-5-25 |
 ----
@@ -160,7 +160,7 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 |---|---|
 | **Description:** | The location of the source whence the knowledge was gathered. |
 | **Importance:** | MUST |
-| **Example:** | Description of data gathered such as found in: https://softwareontology.wordpress.com/2011/04/04/an-agile-ontology/. |
+| **Example:** | Description of data gathered such as found in: https://softwareontology.wordpress.com/2011/04/04/an-agile-ontology/. Other examples may include the outputs from workshops, curating the literature for a field, crowd sourcing intput and so on. |
 ----
 
 ### Content selection
@@ -178,7 +178,7 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | What knowledge representation language was used and why. For a language like OWL indicate the OWL profile and expressivity. |
+| **Description:** | the knowledge representation language used and why it was used. For a language like OWL, indicate the OWL profile and expressivity. |
 | **Importance:** | MUST |
 | **Example:** | OWL version 2, EL profile. |
 ----
@@ -205,7 +205,7 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | Versions of external ontologies imported into the ontology and where they are placed in the host ontology. |
+| **Description:** | The names, versions and citations of external ontologies imported into the ontology and where they are placed in the host ontology. |
 | **Importance:** | MUST |
 | **Example:** | Import of Uberon core – extended version, 2016-05-11 release under the 'anatomical entity' class. |
 ----
@@ -214,9 +214,9 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | Describe the naming scheme for the entities in the ontology, capturing orthography, organisation rules, acronyms, and so on. |
+| **Description:** | The naming scheme for the entities in the ontology, capturing orthography, organisation rules, acronyms, and so on. |
 | **Importance:** | MUST |
-| **Example:** | OBO Foundry naming conventions. |
+| **Example:** | Open Biomedical Ontologies (OBO) Foundry naming conventions; see http://www.obofoundry.org/principles/fp-012-naming-conventions.html. |
 ----
 
 ### Identifier generation policy
@@ -234,16 +234,17 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 |---|---|
 | **Description:** | What metadata for each entity is to be present. This could include, but not be limited to: A natural language definition, editor, edit history, examples, entity lable and synonyms, etc. |
 | **Importance:** | MUST |
-| **Example:** | *there must be a GO thing for this* Each class minimally requires a textual definition and a label. |
+| **Example:** | *Each class minimally requires a textual definition, a label, a creator and  an edit date. The Ontology for Biomedical  Investigations (OBI) paper <https://www.ncbi.nlm.nih.gov/pubmed/27128319> has a section entitled  "Choice of metadata conventions". |
+|
 ----
 
 ### Upper ontology
 
 |  | Specification |
 |---|---|
-| **Description:** | If an upper ontology is used, which one is used and why is it used? If not, why. |
+| **Description:** | If an upper ontology is used, which one is used and why is it used? If not used, then why. |
 | **Importance:** | MUST |
-| **Example:** | SUMO, BFO. *an example sentence would be good.* |
+| **Example:** | SUMO, BFO. The Ontology for Biomedical Investigations (OBI) paper <http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0154556> has a sentence "While each had its strengths and weaknesses, BFO was chosen due to its association with the nascent OBO Foundry"  in its discussion. |
 ----
 
 ### Ontology relationships
@@ -252,16 +253,16 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 |---|---|
 | **Description:** | The relationships or properties used in the ontology, which were used and why? Were new relationships required? Why? |
 | **Importance:** | MUST |
-| **Example:** | The schema.org relationships were imported and used. |
+| **Example:** | The schema.org relationships were imported and used. We used the OBO Relations Ontology. |
 ----
 
 ### Axiom patterns 
 
 |  | Specification |
 |---|---|
-| **Description:** | Regular collections of axiom or statement used in describing ontology classes. If none were used, was the description ad hoc? |
+| **Description:** | Regular collections of axiom or statement used in describing ontology classes. If none were used, say whether the description of entities was ad hoc. |
 | **Importance:** | MUST |
-| **Example:** | The axiom patterns described in Section XX for the Software Ontology in its JBMS paper.  |
+| **Example:** | The axiom patterns described in the Section "The Ontology"  for the Software Ontology in its JBMS paper. http://jbiomedsem.biomedcentral.com/articles/10.1186/2041-1480-5-25 |
 ----
 
 ### Dereferencable IRIs 
@@ -281,7 +282,7 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 |---|---|
 | **Description:** | State whether the ontology wil be actively maintained and developed. Describe a plan for how the ontology will be kept up to date. |
 | **Importance:** | MUST |
-| **Example:** | Outline of plan including method to sustain and who will be responsible. |
+| **Example:** | Outline of sustainability plan, including method to sustain and who will be responsible. |
 ----
 
 ### Entity deprecation strategy 
@@ -297,9 +298,9 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | The policy that governs when new versions of the ontology are created and released. |
+| **Description:** | state or make reference to the policy that governs when new versions of the ontology are created and released. |
 | **Importance:** | MUST |
-| **Example:** | to be done.  |
+| **Example:** | The Open Biomedical    Ontologies Consortium has a versioning policy. http://www.obofoundry.org/id-policy.html This page states "Versions are named by a date in the following format: YYYY-MM-DD. For a given version of an ontology, the ontology should be accessible at the following URL, where <idspace> is replaced by the IDSPACE in lower case." and gives further elaboration. |
 ----
 
 ## Quality Assurance
@@ -308,7 +309,7 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | Description of procedure used to judge whether the ontology achieves the claims made for the ontology. State, for example, whether the ontology answers the queries it claims to answer; is the ontology consistent, with all classes satisfiable, and with all necesssary subsumptions in place. |
+| **Description:** | Description of procedure used to judge whether the ontology achieves the claims made for the ontology. State, for example, whether the ontology answers the queries it claims to answer; whether the ontology is consistent, with all classes satisfiable, and with all necesssary subsumptions in place. |
 | **Importance:** | MUST |
 | **Example:** | Examples of competency questions that can be asked. Examples of inferences that can be made. |
 ----
@@ -319,14 +320,14 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 |---|---|
 | **Description:** | A determination of whether the ontology is of value and significance. An evaluation should show that the motivation is justified and that the objectives of the ontology's development are met effectively and satisfactorily. Describe whether or not the ontology meets its stated requirements, competency questions  and goals.  |
 | **Importance:** | MUST |
-| **Example:** |  to be done. |
+| **Example:** | There is an evaluation    described for the Emotion Ontology in the paper "Evaluating the Emotion Ontology through use in the self-reporting of emotional responses in an academic conference". http://jbiomedsem.biomedcentral.com/articles/10.1186/2041-1480-5-38 |
 ----
 
 ### Example of use
 
 |  | Specification |
 |---|---|
-| **Description:** | An illustration of the ontology in use in its intended application setting or use case. |
+| **Description:** | An illustration of the ontology in use in its an application setting or use case. |
 | **Importance:** | MUST |
 | **Example:** | to Table S1 in The Ontology for Biomedical Investigations article in PlOS One 2016 https://www.ncbi.nlm.nih.gov/pubmed/27128319 shows the projects using OBI. |
 ----
@@ -337,7 +338,7 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 |---|---|
 | **Description:** | State whether the ontology is endorsed by the W3C, the OBO foundry or some organisation representing a community. . |
 | **Importance:** | OPTIONAL |
-| **Example:** | SNOMED is mandated for use by many national health organisations.   |
+| **Example:** | SNOMED is mandated for use by many national health organisations. The Chemicals of Biological Interest Ontology is a member of the OBO Foundry.   |
 ----
 
 ### Logical consistency
