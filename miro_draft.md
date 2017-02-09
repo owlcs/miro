@@ -298,9 +298,9 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | state or make reference to the policy that governs when new versions of the ontology are created and released. |
+| **Description:** | State or make reference to the policy that governs when new versions of the ontology are created and released. |
 | **Importance:** | MUST |
-| **Example:** | The Open Biomedical    Ontologies Consortium has a versioning policy. http://www.obofoundry.org/id-policy.html This page states "Versions are named by a date in the following format: YYYY-MM-DD. For a given version of an ontology, the ontology should be accessible at the following URL, where <idspace> is replaced by the IDSPACE in lower case." and gives further elaboration. |
+| **Example:** | The Open Biomedical Ontologies Consortium has a versioning policy, see http://www.obofoundry.org/id-policy.html. This page states "Versions are named by a date in the following format: YYYY-MM-DD. For a given version of an ontology, the ontology should be accessible at the following URL, where <idspace> is replaced by the IDSPACE in lower case." and gives further elaboration. |
 ----
 
 ## Quality Assurance
@@ -345,16 +345,16 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | An ontology is consistent if there is a model that can satisfy all the axioms of an ontology. an automated reasoner, in a tool such as Protege 4, will show an ontology   to be logically inconsistent if the ontology contains a class that cannot have any individuals. |
+| **Description:** | An ontology is consistent if there is a model that can satisfy all the axioms of an ontology. An automated reasoner, in a tool such as Protégé 4, will show an ontology to be logically inconsistent if the ontology contains a class that has individuals, while being unsatisfiable. A class is unsatisfiable if it cannot have individuals. Protégé will highlight any unsatisfiable classes in red. An ontology which is consistent but has unsatisfiable classes is called "incoherent". |
 | **Importance:** | MUST |
-| **Example:** | Detail of reasoner used and status of satisfiability. "The ontology was submitted to Pellet, ELK and HerMiT and found to be logically consistent with no unsatisfiable classes. |
+| **Example:** | "The ontology was successfully classified by Pellet 2.3.1 and HermiT 1.3.8 (i.e is logically consistent). All classes in the ontology are satisfiable." |
 ----
 
 ### Evidence of use
 
 |  | Specification |
 |---|---|
-| **Description:** | An illustration of the active projects and applications that use the ontology.   |
+| **Description:** | An illustration of active projects and applications that use the ontology.   |
 | **Importance:** | MUST |
 | **Example:** | The Gene Ontology is used to annotate the gene products for their molecular function, biological process and cellular component in many species specific and cross species databases. |
 ----
