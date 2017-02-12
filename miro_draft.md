@@ -129,7 +129,7 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | The person, group of people or organisation that create the ontology. |
+| **Description:** | The person, group of people or organisation that actually create the content of the ontology. This is distinct from the Ontology Owner (above) that is concerned with the management of the ontology's development. |
 | **Importance:** | MUST |
 | **Example:** | The Gene Ontology is developed by the Gene Ontology Consortium. |
 ----
