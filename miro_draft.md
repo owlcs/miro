@@ -309,9 +309,9 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | Description of procedure used to judge whether the ontology achieves the claims made for the ontology. State, for example, whether the ontology answers the queries it claims to answer; whether the ontology is consistent, with all classes satisfiable, and with all necesssary subsumptions in place. |
+| **Description:** | Description of procedure used to judge whether the ontology achieves the claims made for the ontology. State, for example, whether the ontology answers the queries it claims to answer, and whether it can answer them in a time that is reasonable for the projected use case scenario (benchmarking). |
 | **Importance:** | MUST |
-| **Example:** | Examples of competency questions that can be asked. Examples of inferences that can be made. |
+| **Example:** | Examples of competency questions that can be asked. Examples of inferences that can be made. Classification time using an appropriate reasoner. |
 ----
 
 ### Evaluation
