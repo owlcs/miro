@@ -143,7 +143,7 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 | **Example:** | http://www.ebi.ac.uk/efo/submit.html |
 ----
 
-## Knowledge elicitation
+## Knowledge acquisition
 
 ### Source knowledge
 
