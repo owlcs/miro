@@ -5,7 +5,6 @@ MIRO – Minimal Information for Reporting of an Ontology
 ## Working draft 16 November 2016
 
 **Editors**:
-
 Robert Stevens, Manchester University
 
 James Malone, FactBio Limited
@@ -159,7 +158,7 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 |  | Specification |
 |---|---|
 | **Description:** | The location of the source whence the knowledge was gathered. |
-| **Importance:** | MUST |
+| **Importance:** | SHOULD |
 | **Example:** | Description of data gathered such as found in: https://softwareontology.wordpress.com/2011/04/04/an-agile-ontology/. Other examples may include the outputs from workshops, curating the literature for a field, crowd sourcing intput and so on. |
 ----
 
@@ -168,7 +167,7 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 |  | Specification |
 |---|---|
 | **Description:** | The prioritisation of entities to be represented in the ontology and how that prioritisation was achieved. Some knowledge is more important or of greater priority to be in the ontology to support the requirements of that ontology. |
-| **Importance:** | MUST |
+| **Importance:** | SHOULD |
 | **Example:** | Description of the prioritisation process for the Software Ontology in https://softwareontology.wordpress.com/2011/04/04/an-agile-ontology/ |
 ----
 
