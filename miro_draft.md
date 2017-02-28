@@ -79,9 +79,9 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | A name or description of the steps taken to develop the ontology. |
+| **Description:** | A name or description of the steps taken to develop the ontology. This should describe the overall organisation of the ontology developed process. |
 | **Importance:** | MUST |
-| **Example:** | OntoClean, Methontology |
+| **Example:** | Methontology, On-To-Knowledge, Neon methodology. If no bespoke methodological framework was used, describe how the core activities of the ontology engineering lifecycle (such as ontology management, development and support) were adressed (http://onlinelibrary.wiley.com/doi/10.1002/047003033X.ch9/pdf). |
 ----
 
 ## Motivation
@@ -144,13 +144,13 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 
 ## Knowledge acquisition
 
-### Source knowledge
+### Knowledge acquisition methodology
 
 |  | Specification |
 |---|---|
 | **Description:** | How the knowledge in the ontology was gathered, sorted, verified etc. |
 | **Importance:** | MUST |
-| **Example:** | Description of source in the Materials and method section of the article for The Software Ontology (SWO): a resource for reproducibility in biomedical data analysis, curation and digital preservation in JMBS 2014 https://jbiomedsem.biomedcentral.com/articles/10.1186/2041-1480-5-25 |
+| **Example:** | Description of the source knowledge in the materials and method section of the article for The Software Ontology (SWO): a resource for reproducibility in biomedical data analysis, curation and digital preservation in JMBS 2014 https://jbiomedsem.biomedcentral.com/articles/10.1186/2041-1480-5-25 |
 ----
 
 ### Source knowledge location
@@ -259,9 +259,9 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | Regular collections of axiom or statement used in describing ontology classes. If none were used, say whether the description of entities was ad hoc. |
+| **Description:** | Design patterns that were used to describe entities in the ontology. Both domain specific (such as the representation of proteins and genes and their properties and interrelations) and domain independent patterns (continuants and occurrents, mereology, etc) that are of particular relevance to the ontology should be presented.  |
 | **Importance:** | MUST |
-| **Example:** | The axiom patterns described in the Section "The Ontology"  for the Software Ontology in its JBMS paper. http://jbiomedsem.biomedcentral.com/articles/10.1186/2041-1480-5-25 |
+| **Example:** | The axiom patterns described in the Section "The Ontology"  for the Software Ontology in its JBMS paper (http://jbiomedsem.biomedcentral.com/articles/10.1186/2041-1480-5-25). Patterns can be presented as examples or in the form of axiom templates, such as a reference to an ontology design pattern (http://ontologydesignpatterns.org/wiki/Main_Page). |
 ----
 
 ### Dereferencable IRIs 
@@ -269,7 +269,7 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 |  | Specification |
 |---|---|
 | **Description:** | State whether or not the IRI used are dereferencable to a Web resource. Provide any standard prefix (CURIE). |
-| **Importance:** | OPTIONAL |
+| **Importance:** | SHOULD |
 | **Example:** | For example, http://purl.obolibrary.org/obo/GO_0006915 |
 ----
 
@@ -308,9 +308,9 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | Description of procedure used to judge whether the ontology achieves the claims made for the ontology. State, for example, whether the ontology answers the queries it claims to answer, and whether it can answer them in a time that is reasonable for the projected use case scenario (benchmarking). |
+| **Description:** | Description of procedure used to judge whether the ontology achieves the claims made for the ontology. State, for example, whether the ontology is logically consistent, answers the queries it claims to answer, and whether it can answer them in a time that is reasonable for the projected use case scenario (benchmarking). |
 | **Importance:** | MUST |
-| **Example:** | Examples of competency questions that can be asked. Examples of inferences that can be made. Classification time using an appropriate reasoner. |
+| **Example:** | Examples of competency questions that can be asked. Examples of inferences that can be made. Classification time using an appropriate reasoner: "The ontology was successfully classified by both Pellet 2.3.1 and HermiT 1.3.8 (i.e is logically consistent) in less than 1 second. All classes in the ontology are satisfiable." |
 ----
 
 ### Evaluation
@@ -340,14 +340,6 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 | **Example:** | SNOMED is mandated for use by many national health organisations. The Chemicals of Biological Interest Ontology is a member of the OBO Foundry.   |
 ----
 
-### Logical consistency
-
-|  | Specification |
-|---|---|
-| **Description:** | An ontology is consistent if there is a model that can satisfy all the axioms of an ontology. An automated reasoner, in a tool such as Protégé 4, will show an ontology to be logically inconsistent if the ontology contains a class that has individuals, while being unsatisfiable. A class is unsatisfiable if it cannot have individuals. Protégé will highlight any unsatisfiable classes in red. An ontology which is consistent but has unsatisfiable classes is called "incoherent". |
-| **Importance:** | MUST |
-| **Example:** | "The ontology was successfully classified by Pellet 2.3.1 and HermiT 1.3.8 (i.e is logically consistent). All classes in the ontology are satisfiable." |
-----
 
 ### Evidence of use
 
