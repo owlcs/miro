@@ -81,7 +81,7 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 |---|---|
 | **Description:** | A name or description of the steps taken to develop the ontology. This should describe the overall organisation of the ontology developed process. |
 | **Importance:** | MUST |
-| **Example:** | Methontology, On-To-Knowledge, Neon methodology. If no bespoke methodological framework was used, describe how the core activities of the ontology engineering lifecycle (such as ontology management, development and support) were adressed (http://onlinelibrary.wiley.com/doi/10.1002/047003033X.ch9/pdf). |
+| **Example:** | Methontology, On-To-Knowledge, Neon methodology. If no bespoke methodological framework was used, describe how the core activities of the ontology engineering lifecycle (such as ontology management, development and support) were addressed (http://onlinelibrary.wiley.com/doi/10.1002/047003033X.ch9/pdf). |
 ----
 
 ## Motivation
@@ -92,7 +92,7 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 |---|---|
 | **Description:** | Justification of why the ontology is required. |
 | **Importance:** | MUST |
-| **Example:** | For example the 2015 JBMS article "Unification of multi-species vertebrate anatomy ontologies for comparative biology in Uberon" has the following: "Here we present the unification of anatomy ontologies into Uberon, a single ontology resource that enables interoperability among disparate data and research groups." http://jbiomedsem.biomedcentral.com/articles/10.1186/2041-1480-5-21 |
+| **Example:** | For example, the 2015 JBMS article "Unification of multi-species vertebrate anatomy ontologies for comparative biology in Uberon" has the following: "Here we present the unification of anatomy ontologies into Uberon, a single ontology resource that enables interoperability among disparate data and research groups." http://jbiomedsem.biomedcentral.com/articles/10.1186/2041-1480-5-21 |
 ----
 
 ### Competition
@@ -101,7 +101,7 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 |---|---|
 | **Description:** | The names and citations for other ontology or ontologies in the same general area as the one being reported upon, together with a description on why the one being reported is needed instead or in addition to the others. |
 | **Importance:** | MUST |
-| **Example:** | The background section to the paper "The Software Ontology (SWO): a resource for reproducibility in biomedical data analysis, curation and digital preservation" in JMBS 2014 describes other attempts to describe software in ontologies or vocabularies. See http://jbiomedsem.biomedcentral.com/articles/10.1186/2041-1480-5-25 |
+| **Example:** | The background section of the paper "The Software Ontology (SWO): a resource for reproducibility in biomedical data analysis, curation and digital preservation" in JMBS 2014 describes other attempts to describe software in ontologies or vocabularies. See http://jbiomedsem.biomedcentral.com/articles/10.1186/2041-1480-5-25 |
 ----
 
 ### Target audience
@@ -119,7 +119,7 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | The domain or field of interest for the ontology and the boundaries, granularity of representation and coverage of the ontology. State the requirements of the ontology, such as the competency questions it should satisfy. A high level visualisation or tabular representation is optional, but often helpful to illustrate the scope. |
+| **Description:** | The domain or field of interest for the ontology and the boundaries, granularity of representation and coverage of the ontology. State the requirements of the ontology, such as the competency questions it should satisfy. A high-level visualisation or tabular representation is optional, but often helpful to illustrate the scope. |
 | **Importance:** | MUST |
 | **Example:** | From the Human Phenotype Ontology NAR 2013 article "human phenotypic abnormalities." https://academic.oup.com/nar/article-lookup/doi/10.1093/nar/gkt1026  |
 ----
@@ -128,7 +128,7 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | The person, group of people or organisation that actually create the content of the ontology. This is distinct from the Ontology Owner (above) that is concerned with the management of the ontology's development. |
+| **Description:** | The person, group of people or organisation that actually creates the content of the ontology. This is distinct from the Ontology Owner (above) that is concerned with the management of the ontology's development. |
 | **Importance:** | MUST |
 | **Example:** | The Gene Ontology is developed by the Gene Ontology Consortium. |
 ----
@@ -148,7 +148,7 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | How the knowledge in the ontology was gathered, sorted, verified etc. |
+| **Description:** | How the knowledge in the ontology was gathered, sorted, verified, etc. |
 | **Importance:** | MUST |
 | **Example:** | Description of the source knowledge in the materials and method section of the article for The Software Ontology (SWO): a resource for reproducibility in biomedical data analysis, curation and digital preservation in JMBS 2014 https://jbiomedsem.biomedcentral.com/articles/10.1186/2041-1480-5-25 |
 ----
@@ -159,7 +159,7 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 |---|---|
 | **Description:** | The location of the source whence the knowledge was gathered. |
 | **Importance:** | SHOULD |
-| **Example:** | Description of data gathered such as found in: https://softwareontology.wordpress.com/2011/04/04/an-agile-ontology/. Other examples may include the outputs from workshops, curating the literature for a field, crowd sourcing intput and so on. |
+| **Example:** | Description of data gathered such as found in https://softwareontology.wordpress.com/2011/04/04/an-agile-ontology/. Other examples may include the outputs from workshops, curating the literature for a field, crowd sourcing input and so on. |
 ----
 
 ### Content selection
@@ -231,9 +231,9 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | What metadata for each entity is to be present. This could include, but not be limited to: A natural language definition, editor, edit history, examples, entity lable and synonyms, etc. |
+| **Description:** | What metadata for each entity is to be present. This could include, but not be limited to: A natural language definition, editor, edit history, examples, entity label and synonyms, etc. |
 | **Importance:** | MUST |
-| **Example:** | *Each class minimally requires a textual definition, a label, a creator and  an edit date. The Ontology for Biomedical  Investigations (OBI) paper <https://www.ncbi.nlm.nih.gov/pubmed/27128319> has a section entitled  "Choice of metadata conventions". |
+| **Example:** | Each class minimally requires a textual definition, a label, a creator and an edit date. The Ontology for Biomedical  Investigations (OBI) paper <https://www.ncbi.nlm.nih.gov/pubmed/27128319> has a section entitled  "Choice of metadata conventions". |
 |
 ----
 
@@ -259,12 +259,12 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | Design patterns that were used to describe entities in the ontology. Both domain specific (such as the representation of proteins and genes and their properties and interrelations) and domain independent patterns (continuants and occurrents, mereology, etc) that are of particular relevance to the ontology should be presented.  |
+| **Description:** | An axiom pattern is a regular design of axioms or a template for axioms used to represent a category of entities or common aspects of a variety of types of entities. An axiom pattern may comprise both asserted and inferred axioms. The aim of a pattern is to achieve a consistent style of representation. An important family of axiom patterns are Ontology Design pattern (ODP) which are commonly used solutions for issues in representation.  |
 | **Importance:** | MUST |
 | **Example:** | The axiom patterns described in the Section "The Ontology"  for the Software Ontology in its JBMS paper (http://jbiomedsem.biomedcentral.com/articles/10.1186/2041-1480-5-25). Patterns can be presented as examples or in the form of axiom templates, such as a reference to an ontology design pattern (http://ontologydesignpatterns.org/wiki/Main_Page). |
 ----
 
-### Dereferencable IRIs 
+### Dereferenceable IRIs 
 
 |  | Specification |
 |---|---|
@@ -279,7 +279,7 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | State whether the ontology wil be actively maintained and developed. Describe a plan for how the ontology will be kept up to date. |
+| **Description:** | State whether the ontology will be actively maintained and developed. Describe a plan for how the ontology will be kept up to date. |
 | **Importance:** | MUST |
 | **Example:** | Outline of sustainability plan, including method to sustain and who will be responsible. |
 ----
@@ -290,7 +290,7 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 |---|---|
 | **Description:** | Describe the procedures for managing entities that become removed, split or redefined. |
 | **Importance:** | MUST |
-| **Example:** | The owl:DeprecatedClass; no class is deleted from the ontology, but deprecated classes are labelled as obselete with an annotation property. |
+| **Example:** | The owl:DeprecatedClass; no class is deleted from the ontology, but deprecated classes are labelled as obsolete with an annotation property. |
 ----
 
 ### Versioning policy
@@ -308,18 +308,18 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | Description of procedure used to judge whether the ontology achieves the claims made for the ontology. State, for example, whether the ontology is logically consistent, answers the queries it claims to answer, and whether it can answer them in a time that is reasonable for the projected use case scenario (benchmarking). |
+| **Description:** | Description of the procedure used to judge whether the ontology achieves the claims made for the ontology. State, for example, whether the ontology is logically consistent, answers the queries it claims to answer, and whether it can answer them in a time that is reasonable for the projected use case scenario (benchmarking). |
 | **Importance:** | MUST |
-| **Example:** | Examples of competency questions that can be asked. Examples of inferences that can be made. Classification time using an appropriate reasoner: "The ontology was successfully classified by both Pellet 2.3.1 and HermiT 1.3.8 (i.e is logically consistent) in less than 1 second. All classes in the ontology are satisfiable." |
+| **Example:** | Examples of competency questions that can be asked. Examples of inferences that can be made. Classification time using an appropriate reasoner: "The ontology was successfully classified by both Pellet 2.3.1 and HermiT 1.3.8 (i.e., is logically consistent) in less than 1 second. All classes in the ontology are satisfiable." |
 ----
 
 ### Evaluation
 
 |  | Specification |
 |---|---|
-| **Description:** | A determination of whether the ontology is of value and significance. An evaluation should show that the motivation is justified and that the objectives of the ontology's development are met effectively and satisfactorily. Describe whether or not the ontology meets its stated requirements, competency questions  and goals.  |
+| **Description:** | A determination of whether the ontology is of value and significance. An evaluation should show that the motivation is justified and that the objectives of the ontology's development are met effectively and satisfactorily. Describe whether or not the ontology meets its stated requirements, competency questions and goals.  |
 | **Importance:** | MUST |
-| **Example:** | There is an evaluation    described for the Emotion Ontology in the paper "Evaluating the Emotion Ontology through use in the self-reporting of emotional responses in an academic conference". http://jbiomedsem.biomedcentral.com/articles/10.1186/2041-1480-5-38 |
+| **Example:** | There is an evaluation described for the Emotion Ontology in the paper "Evaluating the Emotion Ontology through use in the self-reporting of emotional responses in an academic conference". http://jbiomedsem.biomedcentral.com/articles/10.1186/2041-1480-5-38 |
 ----
 
 ### Example of use
@@ -328,14 +328,14 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 |---|---|
 | **Description:** | An illustration of the ontology in use in its an application setting or use case. |
 | **Importance:** | MUST |
-| **Example:** | to Table S1 in The Ontology for Biomedical Investigations article in PlOS One 2016 https://www.ncbi.nlm.nih.gov/pubmed/27128319 shows the projects using OBI. |
+| **Example:** | to Table S1 in The Ontology for Biomedical Investigations article in PLoS One 2016 https://www.ncbi.nlm.nih.gov/pubmed/27128319 shows the projects using OBI. |
 ----
 
 ### Institutional endorsement
 
 |  | Specification |
 |---|---|
-| **Description:** | State whether the ontology is endorsed by the W3C, the OBO foundry or some organisation representing a community. . |
+| **Description:** | State whether the ontology is endorsed by the W3C, the OBO foundry or some organisation representing a community. |
 | **Importance:** | OPTIONAL |
 | **Example:** | SNOMED is mandated for use by many national health organisations. The Chemicals of Biological Interest Ontology is a member of the OBO Foundry.   |
 ----
@@ -347,6 +347,6 @@ This document contains the Minimal Information for Reporting of an Ontology (MIR
 |---|---|
 | **Description:** | An illustration of active projects and applications that use the ontology.   |
 | **Importance:** | MUST |
-| **Example:** | The Gene Ontology is used to annotate the gene products for their molecular function, biological process and cellular component in many species specific and cross species databases. |
+| **Example:** | The Gene Ontology is used to annotate the gene products for their molecular function, biological process and cellular component in many species specific and cross-species databases. |
 ----
 
