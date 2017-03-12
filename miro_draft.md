@@ -2,7 +2,7 @@
 MIRO – Minimal Information for Reporting of an Ontology
 ==============
 </header>
-## Working draft 16 November 2016
+## Working draft 12 March 2017
 
 **Editors**:
 Robert Stevens, Manchester University
@@ -21,6 +21,7 @@ Nicolas Matentzoglu, Manchester University
 | 0.0.2 | 27.05.2016 | James Malone|Review first version for wording and examples |
 | 0.0.3 | 28.06.2016 | Nicolas Matentzoglu | Unified capitalisation in Information Item names |
 | 0.0.4 | 02.12.2016 | James Malone | Add elucidation to items |
+| 0.0.5 | 12.03.2017 | Robert Stevens, James Malone, Chris Mungall, Nicolas Matentzoglu | First public release |
 ----
 
 # Summary 
