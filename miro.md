@@ -26,7 +26,7 @@ Nicolas Matentzoglu, Manchester University
 ----
 
 # Summary 
-This document contains the Minimal Information for Reporting of an Ontology (MIRO) guidelines. 
+This document contains the Minimum Information for Reporting of an Ontology (MIRO) guidelines. 
 
 # Guidelines
 
