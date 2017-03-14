@@ -1,0 +1,381 @@
+---
+title: 'The minimum information for the reporting of an ontology (MIRO) guidelines:
+  Analysis'
+author: "Nicolas Matentzoglu, James Malone, Chris Mungall and Robert Stevens"
+date: "7 May 2016"
+---
+
+This document contains the analysis for the paper "The minimum information for the reporting of an ontology (MIRO) guidelines", submitted to the Journal of Biomedical Semantics (JBMS) in March 2017.
+
+```{r dirsetup, include=FALSE}
+## wd is the directory that contains the four raw data files: jbms_results.csv, jbms_paper_results.csv, rating_v_compliance.csv, jbms_labels.csv, jbms_coded_free_form.csv
+wd<-"D:/Dropbox (Personal)/jbms2017_miro/survey results/jbms_submission/analysis/"
+
+## directory to export the charts into: 
+chartdir<-"D:/Dropbox (Personal)/jbms2017_miro/survey results/jbms_submission/analysis/"
+```
+
+```{r functions, include=FALSE}
+aggregate_by_role<-function(df_long) {
+x<-df_long
+fun<-function(x) c(mean =mean(x,na.rm=TRUE),median =median(x,na.rm=TRUE),sd =sd(x,na.rm=TRUE),sum=sum(x,na.rm=TRUE) ) 
+
+df_long_agg<-as.data.frame(as.list(aggregate(x$value,by=list(x$label),FUN=fun)))
+df_long_agg$group="all"
+
+x<-df_long[df_long$r_user,]
+y<-as.data.frame(as.list(aggregate(x$value,by=list(x$label),FUN=fun)))
+y$group="user"
+df_long_agg<-rbind(df_long_agg,y)
+
+x<-df_long[df_long$r_author,]
+y<-as.data.frame(as.list(aggregate(x$value,by=list(x$label),FUN=fun)))
+y$group="author"
+df_long_agg<-rbind(df_long_agg,y)
+
+x<-df_long[df_long$r_review,]
+y<-as.data.frame(as.list(aggregate(x$value,by=list(x$label),FUN=fun)))
+y$group="reviewer"
+df_long_agg<-rbind(df_long_agg,y)
+
+x<-df_long[df_long$r_reader,]
+y<-as.data.frame(as.list(aggregate(x$value,by=list(x$label),FUN=fun)))
+y$group="reader"
+df_long_agg<-rbind(df_long_agg,y)
+
+x<-df_long[df_long$r_developer,]
+y<-as.data.frame(as.list(aggregate(x$value,by=list(x$label),FUN=fun)))
+y$group="developer"
+df_long_agg<-rbind(df_long_agg,y)
+
+names(df_long_agg)<-c("ontology_feature","mean","median","sd","sum","group")
+
+df_long_agg<-reshape(df_long_agg,timevar = "group",idvar="ontology_feature",direction = "wide")
+
+df_long_agg<-df_long_agg[order(-df_long_agg$mean.reviewer),]
+df_long_agg$Reviewer<-1:nrow(df_long_agg)
+
+df_long_agg<-df_long_agg[order(-df_long_agg$mean.author),]
+df_long_agg$Author<-1:nrow(df_long_agg)
+
+df_long_agg<-df_long_agg[order(-df_long_agg$mean.user),]
+df_long_agg$User<-1:nrow(df_long_agg)
+
+df_long_agg<-df_long_agg[order(-df_long_agg$mean.reader),]
+df_long_agg$Reader<-1:nrow(df_long_agg)
+
+df_long_agg<-df_long_agg[order(-df_long_agg$mean.developer),]
+df_long_agg$Developer<-1:nrow(df_long_agg)
+
+
+df_long_agg<-df_long_agg[order(-df_long_agg$mean.all),]
+df_long_agg$All<-1:nrow(df_long_agg)
+return(df_long_agg)
+}
+trim <- function (x) gsub("^\\s+|\\s+$", "", x)
+```
+
+```{r prepare, include=FALSE}
+setwd(wd)
+
+library(reshape2)
+library(plyr)
+library(ggplot2)
+library(xtable)
+library(knitr)
+
+results_f<-"jbms_results.csv"
+paper_results_f<-"jbms_paper_results.csv"
+ratingvcompliance_f<-"rating_v_compliance.csv"
+labels_f<-"jbms_labels.csv"
+comments_f<-"jbms_coded_free_form.csv"
+
+df_results<-read.csv(file=results_f,head=TRUE,sep=",",stringsAsFactors = FALSE)
+df_role<-df_results[ , grepl( "^role_" , names( df_results ) ) ]
+
+df_role$role_developer<-ifelse(df_role$role_developer=="Ontology developer",1,0)
+df_role$role_user<-ifelse(df_role$role_user=="Ontology user",1,0)
+df_role$role_reader<-ifelse(df_role$role_reader=="Read papers on ontologies",1,0)
+df_role$role_author<-ifelse(df_role$role_author=="Author papers on ontologies",1,0)
+df_role$role_review<-ifelse(df_role$role_review=="Review papers on ontologies",1,0)
+
+df_labels<-read.csv(file=labels_f,head=FALSE,sep=",")
+dfl<-as.data.frame(t(df_labels))
+names(dfl) <- c("deprecated","col","orig","label")
+
+df_results$job<-ifelse(df_results$job=="",ifelse(df_results$job_other=="","Non given",df_results$job_other),df_results$job)
+df_results$job<-ifelse(df_results$job=="Lecturer in the University","An academic employee",df_results$job)
+df_results$job<-ifelse(df_results$job=="contractor","Other",df_results$job)
+
+df_results$job<-ifelse(df_results$job=="A private sector employee","Private sector employee",df_results$job)
+df_results$job<-ifelse(df_results$job=="A public sector/not-for profit employee","Public sector/not-for profit employee",df_results$job)
+df_results$job<-ifelse(df_results$job=="A student","Student",df_results$job)
+df_results$job<-ifelse(df_results$job=="An academic employee","Academic employee",df_results$job)
+df_results$job<-ifelse(df_results$job=="Consultant","Other",df_results$job)
+df_results$job<-ifelse(df_results$job=="Ontology Consulting Company Owner","Other",df_results$job)
+df_results$job<-ifelse(df_results$job=="Contractor","Other",df_results$job)
+df_results$job<-ifelse(df_results$job=="Consultant for academic/public sector/non-profit","Other",df_results$job)
+
+
+df_results$role_developer<-ifelse(df_results$role_developer=="Ontology developer","D","")
+df_results$role_user<-ifelse(df_results$role_user=="Ontology user","U","")
+df_results$role_reader<-ifelse(df_results$role_reader=="Read papers on ontologies","R","")
+df_results$role_author<-ifelse(df_results$role_author=="Author papers on ontologies","A","")
+df_results$role_review<-ifelse(df_results$role_review=="Review papers on ontologies","W","")
+
+df_results$r_developer<-ifelse(df_results$role_developer=="D",TRUE,FALSE)
+df_results$r_user<-ifelse(df_results$role_user=="U",TRUE,FALSE)
+df_results$r_reader<-ifelse(df_results$role_reader=="R",TRUE,FALSE)
+df_results$r_author<-ifelse(df_results$role_author=="A",TRUE,FALSE)
+df_results$r_review<-ifelse(df_results$role_review=="W",TRUE,FALSE)
+
+df_results$role<-paste(df_results$role_developer,df_results$role_user,df_results$role_reader,df_results$role_author,df_results$role_review,sep="")
+df_results$email<-ifelse(grepl(".*[@].*[.]",df_results$email),trim(df_results$email),"NA")
+df_results$tdl<-sub('.*\\.', '', df_results$email)
+
+df_comments<-read.csv(file=comments_f,head=TRUE,stringsAsFactors = FALSE,sep=",")
+
+df_paper_results<-read.csv(file=paper_results_f,head=TRUE,stringsAsFactors = FALSE,sep=",")
+
+```
+
+# Demographics
+```{r demographics}
+
+fontsize<-16
+
+## Role Analysis
+(count(df_results$role_user))
+(count(df_results$role_developer))
+(count(df_results$role_review))
+(count(df_results$role_reader))
+(count(df_results$role_author))
+
+colctrole<-colSums(df_results[c("r_user","r_developer","r_review","r_reader","r_author")])
+names(colctrole)<-c("User","Developer","Reviewer","Reader","Author")
+colctrole<-melt(colctrole)
+colctrole$id<-rownames(colctrole)
+
+ggplot(colctrole,aes(id,value)) +geom_bar(stat = "identity") + xlab("") + ylab("")  + theme(text = element_text(size=fontsize)) + coord_flip() + theme(plot.margin = unit(c(0,0,-0.5,-0.5), "cm"))
+ggsave(paste(chartdir,"role.pdf",sep = ""), width = 3, height = 2.5)
+
+### Cross-correlation matrix for role
+names(df_role)<-c("Developer","User","Reader","Author","Reviewer")
+corMat <- cor(df_role)
+kable(corMat)
+melted_cormat <- melt(corMat)
+
+ggplot(data = melted_cormat, aes(x=Var1, y=Var2, fill=value)) + geom_tile()+ xlab("") + ylab("") + scale_fill_gradient(low="white", high="black") + theme(text = element_text(size=fontsize)) + theme(plot.margin = unit(c(0,0,-0.5,0), "cm"))
+ggsave(paste(chartdir,"role_cormat.pdf",sep = ""), width = 7, height = 2.5)
+
+### Combinations of ontology roles
+ct_r<-count(df_results$role)
+ct_r$pc<-round(ct_r$freq/nrow(df_results)*100,2)
+kable(ct_r[order(-ct_r$freq),])
+
+##TDL Analysis
+ct_tdl<-count(df_results$tdl)
+ct_tdl<-ct_tdl[order(-ct_tdl$freq),]
+
+ggplot(ct_tdl,aes(reorder(x,freq),freq)) +geom_bar(stat = "identity") + xlab("") + ylab("")  + theme(text = element_text(size=fontsize)) + theme(plot.margin = unit(c(0,0,-0.5,0), "cm"))
+ggsave(paste(chartdir,"tdl.pdf",sep = ""), width = 6, height = 2.5)
+
+##Job analysis
+ct<-count(df_results$job)
+ggplot(ct,aes(x=reorder(x,freq),y=freq)) + geom_bar(stat="identity") + ylab("") + xlab("") + coord_flip() + theme(text = element_text(size=fontsize)) + theme(plot.margin = unit(c(0,0,-0.5,-0.5), "cm"))
+ggsave(paste(chartdir,"job.pdf",sep = ""), width = 4, height = 2.5)
+
+
+write.csv(corMat,file = "correlation_matrix_usergroups.csv")
+
+```
+
+#Overall ranking
+```{r overall_ranking}
+##Create ranking by mean
+df<-df_results[ , grepl( "^o_" , names( df_results )) ]
+df$id<-df_results$id
+
+df_long<-melt(df,id.vars="id")
+df_long<-merge(df_long,df_results[ , c("id","r_developer","r_user","r_author","r_review","r_reader","role") ],by="id")
+
+df_long<-merge(df_long,dfl[c("col","label")],by.x = "variable",by.y = "col")
+df_long$label<-as.factor(df_long$label)
+
+df_long_agg<-aggregate(df_long$value,by=list(df_long$label),FUN=function(x) mean(x, na.rm=TRUE))
+df_long_agg<-df_long_agg[order(-df_long_agg$x),]
+df_long$label <- factor(df_long$label, levels = df_long_agg$Group.1)
+
+#head(df_long[c("variable","value")])
+
+###Ordered mean rating of information items across all participants
+ggplot(df_long,aes(x=label,y=value)) + stat_summary(fun.y = mean, geom = "bar") + geom_hline(yintercept = 5)+ ylab("Mean Rating") + xlab("")+ geom_hline(yintercept = 3.0) + geom_hline(yintercept = 3.5) + coord_flip(ylim=c(2.6,5)) + theme(text = element_text(size=10)) + theme(plot.margin = unit(c(0,0,-0.5,-0.5), "cm")) + 	geom_text(aes(x=29.81, y=3.1,label = "SHOULD"), hjust = 0, vjust = 0, size=2.8) + 	geom_text(aes(x=29.81, y=2.5,label = "OPTIONAL"), hjust = 0, vjust = 0, size=2.8,colour="white") + 	geom_text(aes(x=29.81, y=4.1,label = "MUST"), hjust = 0, vjust = 0, size=2.8)
+ggsave(paste(chartdir,"overall_mean_results.pdf",sep = ""), width = 6, height = 6)
+
+## Rankings across roles
+df_long_agg<-aggregate_by_role(df_long)
+write.csv(df_long_agg,file = "priority_by_group.csv")
+options(scipen = 100)
+df_long_agg<-df_long_agg[order(df_long_agg$sd.all),]
+kable(df_long_agg[c("ontology_feature","All","mean.all","median.all","sd.all")])
+
+#print(xtable(df_long_agg[c("ontology_feature","All","mean.all","median.all","sd.all")],digits=c(0,0,0,2,0,2)),include.rownames=FALSE)
+
+### Correlation of standard deviation and mean
+kable(cor(df_long_agg[c("sd.all","mean.all")]))
+
+
+### Ranking table
+dfl_i<-df_long_agg[c("ontology_feature","All","Author","Developer","Reviewer","User","Reader")]
+dfl_i<-dfl_i[order(dfl_i$All),]
+kable(dfl_i)
+
+thresh<-4
+dfl_i_dev<-dfl_i
+#dfl_i_dev$author_d<-ifelse((dfl_i_dev$All-dfl_i_dev$Author)>=thresh,"less",ifelse((dfl_i_dev$All-dfl_i_dev$Author)<=-thresh,"more",""))
+#dfl_i_dev$developer_d<-ifelse((dfl_i_dev$All-dfl_i_dev$Developer)>=thresh,"less",ifelse((dfl_i_dev$All-dfl_i_dev$Developer)<=-thresh,"more",""))
+#dfl_i_dev$reviewer_d<-ifelse((dfl_i_dev$All-dfl_i_dev$Reviewer)>=thresh,"less",ifelse((dfl_i_dev$All-dfl_i_dev$Reviewer)<=-thresh,"more",""))
+#dfl_i_dev$user_d<-ifelse((dfl_i_dev$All-dfl_i_dev$User)>=thresh,"less",ifelse((dfl_i_dev$All-dfl_i_dev$User)<=-thresh,"more",""))
+#dfl_i_dev$reader_d<-ifelse((dfl_i_dev$All-dfl_i_dev$Reader)>=thresh,"less",ifelse((dfl_i_dev$All-dfl_i_dev$Reader)<=-thresh,"more",""))
+dfl_i_dev$author_d<-dfl_i_dev$All-dfl_i_dev$Author
+dfl_i_dev$developer_d<-dfl_i_dev$All-dfl_i_dev$Developer
+dfl_i_dev$reviewer_d<-dfl_i_dev$All-dfl_i_dev$Reviewer
+dfl_i_dev$user_d<-dfl_i_dev$All-dfl_i_dev$User
+dfl_i_dev$reader_d<-dfl_i_dev$All-dfl_i_dev$Reader
+kable(dfl_i_dev)
+
+### Ranking of information items broken down by roles
+df_long_agg_long<-melt(dfl_i,id.vars="ontology_feature")
+df_long_agg_long$ontology_feature <- factor(df_long_agg_long$ontology_feature, levels = dfl_i$ontology_feature)
+ggplot(df_long_agg_long,aes(x=ontology_feature,y=value,group=variable,fill=variable)) + geom_bar(stat = "identity",position = "dodge") + coord_flip()
+ggsave(paste(chartdir,"overall_ranking_by_role.pdf",sep = ""), width = 4, height = 2.5)
+```
+
+# Comment Analysis
+```{r analyse_comments}
+df<-df_comments[ , grepl( "_code[2-6]?$" , names( df_comments )) ]
+#df$id<-df_comments$id
+
+kw<-c()
+
+for(i in 1:nrow(df)) {
+  kw<-c(kw,unique(as.character(df[i,])))
+}
+
+ct_key<-count(kw)
+kable(ct_key[order(-ct_key$freq),])
+
+df_comments_important<-df_comments[ , grepl( "important_comments_code[2-6]?$" , names( df_comments )) ]
+
+keywords<-c()
+
+for(i in 1:nrow(df)) {
+  keywords<-c(keywords,unique(as.character(df[i,])))
+}
+
+keywords<-keywords[keywords != ""];
+
+ct_comments_all_key<-count(keywords)
+kable(ct_comments_all_key[order(-ct_comments_all_key$freq),])
+
+df_comments_important<-df_comments[ , grepl( "important_comments_code[2-6]?$" , names( df_comments )) ]
+
+keywords<-c()
+
+for(i in 1:nrow(df_comments_important)) {
+  keywords<-c(keywords,unique(as.character(df_comments_important[i,])))
+}
+
+keywords<-keywords[keywords != ""];
+ct_comments_important_key<-count(keywords)
+kable(ct_comments_important_key[order(-ct_comments_important_key$freq),])
+
+
+ct_comments_important_key$group<-"ungrouped"
+
+ct_comments_important_key$group<-ifelse(ct_comments_important_key$group=="ungrouped",ifelse(ct_comments_important_key$x=="coverage"|ct_comments_important_key$x=="scope"|ct_comments_important_key$x=="interdisciplinary"|ct_comments_important_key$x=="granularity","Scope and Coverage","ungrouped"),ct_comments_important_key$group)
+
+ct_comments_important_key$group<-ifelse(ct_comments_important_key$group=="ungrouped",ifelse(ct_comments_important_key$x=="compatibility_other_ontologies"|ct_comments_important_key$x=="interoperability","Interoperability","ungrouped"),ct_comments_important_key$group)
+
+ct_comments_important_key$group<-ifelse(ct_comments_important_key$group=="ungrouped",ifelse(ct_comments_important_key$x=="use_case_suitability"|ct_comments_important_key$x=="use_case_adjustability"|ct_comments_important_key$x=="purpose_explicit","Use Case","ungrouped"),ct_comments_important_key$group)
+
+ct_comments_important_key$group<-ifelse(ct_comments_important_key$group=="ungrouped",ifelse(ct_comments_important_key$x=="user_community"|ct_comments_important_key$x=="motivated_editors"|ct_comments_important_key$x=="active_development"|ct_comments_important_key$x=="change_on_demand"|ct_comments_important_key$x=="not_one_off"|ct_comments_important_key$x=="commit_count"|ct_comments_important_key$x=="institution_endorsement","Active Community","ungrouped"),ct_comments_important_key$group)
+
+
+ct_comments_important_key$group<-ifelse(ct_comments_important_key$group=="ungrouped",ifelse(ct_comments_important_key$x=="evidence_added_value"|ct_comments_important_key$x=="evidence_application"|ct_comments_important_key$x=="number_projects"|ct_comments_important_key$x=="evidence_use"|ct_comments_important_key$x=="large_database_use","Evidence for use","ungrouped"),ct_comments_important_key$group)
+
+ct_comments_important_key$group<-ifelse(ct_comments_important_key$group=="ungrouped",ifelse(ct_comments_important_key$x=="domain"|ct_comments_important_key$x=="content"|ct_comments_important_key$x=="representational_adequacy"|ct_comments_important_key$x=="represents_reality"|ct_comments_important_key$x=="realist_vs_application"|ct_comments_important_key$x=="consistent_content"|ct_comments_important_key$x=="coherency","Content","ungrouped"),ct_comments_important_key$group)
+
+ct_comments_important_key$group<-ifelse(ct_comments_important_key$group=="ungrouped",ifelse(ct_comments_important_key$x=="definitions"|ct_comments_important_key$x=="documentation_quality"|ct_comments_important_key$x=="documentation"|ct_comments_important_key$x=="ontology_visualisation"|ct_comments_important_key$x=="language","Metadata and Documentation","ungrouped"),ct_comments_important_key$group)
+
+ct_comments_important_key$group<-ifelse(ct_comments_important_key$group=="ungrouped",ifelse(ct_comments_important_key$x=="obo_principles"|ct_comments_important_key$x=="availability"|ct_comments_important_key$x=="open_source"|ct_comments_important_key$x=="standardisation"|ct_comments_important_key$x=="sustainability"|ct_comments_important_key$x=="dereferenceble_uris"|ct_comments_important_key$x=="update_strategy","Publishing and Life Cycle","ungrouped"),ct_comments_important_key$group)
+
+ct_comments_important_key$group<-ifelse(ct_comments_important_key$group=="ungrouped",ifelse(ct_comments_important_key$x=="competition"|ct_comments_important_key$x=="quality","Other","ungrouped"),ct_comments_important_key$group)
+
+ct_comments_important_key$group<-ifelse(ct_comments_important_key$group=="ungrouped",ifelse(ct_comments_important_key$x=="hierarchy"|ct_comments_important_key$x=="classification"|ct_comments_important_key$x=="defined_dependencies"|ct_comments_important_key$x=="minimal_dependencies"|ct_comments_important_key$x=="property_selection_strategy"|ct_comments_important_key$x=="logically_sound","Representation","ungrouped"),ct_comments_important_key$group)
+
+ct_comments_important_key$group<-ifelse(ct_comments_important_key$group=="ungrouped",ifelse(ct_comments_important_key$x=="user_friendly"|ct_comments_important_key$x=="comprehensibility"|ct_comments_important_key$x=="difficulty_use"|ct_comments_important_key$x=="data_capture_support"|ct_comments_important_key$x=="data_migration_support","Usability","ungrouped"),ct_comments_important_key$group)
+
+agg<-aggregate(ct_comments_important_key$freq,by=list(ct_comments_important_key$group),sum)
+agg<-agg[order(-agg$x),]
+#print(xtable(agg,digits=c(0,0,0)),include.rownames=FALSE)
+
+keywords_other<-kw[!(kw %in% keywords)]
+
+ct_comments_other_key<-count(keywords_other)
+kable(ct_comments_other_key[order(-ct_comments_other_key$freq),])
+
+```
+
+# Systematic review of MIRO compliance
+```{r papers1}
+paper_metadata<-c("Name","URL","Domain","Language","License","Repository")
+df_paper_metadata<-df_paper_results[paper_metadata]
+df_paper_coding<-df_paper_results[, !names(df_paper_results) %in% paper_metadata]
+latex_paper_metadata<-df_paper_metadata[c("Name","Domain","URL")]
+#print(xtable(latex_paper_metadata,digits=c(0,0,0,0)),include.rownames=FALSE)
+
+df_coding_melt<-melt(df_paper_coding,id.vars = "Code")
+df_coding_melt$value<-as.factor(df_coding_melt$value)
+ggplot(df_coding_melt[df_coding_melt$variable %in% c("Ontology.name","Ontology.owner","OBO.Principles"),],aes(x=value,fill=value)) + geom_bar()+facet_wrap("variable")+ theme_bw() + scale_fill_grey()
+```
+
+```{r papers2, fig.height=15}
+ggplot(df_coding_melt[!(df_coding_melt$variable %in% c("Ontology.name","Ontology.owner","OBO.Principles")),],aes(x=value,fill=value)) + geom_bar()+facet_wrap("variable",ncol = 3) + theme_bw() + scale_fill_grey()
+ggsave(paste(chartdir,"results_coding.pdf",sep = ""), width = 8, height = 10)
+```
+
+```{r papers3}
+df_coding_melt$value<-as.numeric(as.character(df_coding_melt$value))
+agg_compliance<-aggregate(df_coding_melt$value,by=list(df_coding_melt$variable),FUN=mean)
+agg_compliance$compliance<-ifelse(agg_compliance$Group.1=="Ontology.name"|agg_compliance$Group.1=="Ontology.owner",agg_compliance$x/2,agg_compliance$x);
+agg_compliance$compliance<-round(agg_compliance$compliance*100,2)
+names(agg_compliance)<-c("MIRO item","x","Compliance")
+write.csv(file = "agg_compliance.csv",agg_compliance)
+
+# AT THIS POINT, A DOCUMENT WAS CREATED MANUALLY WITH THE VALUES FOR COMPLIANCE AND RATINGS, AS MANUALLY MATCHING THEM TURNED OUT IMPOSSIBLE. FOR THAT, agg_compliance and priority_by_group (the mean_all column only) where merged together.
+df_cvr<-read.csv(file=ratingvcompliance_f,head=TRUE,sep=",",stringsAsFactors = FALSE)
+
+```
+
+## Compliance vs Ratings
+```{r compliancevrating}
+df_cvr$rating_cat<-ifelse(df_cvr$rating<3,"Optional",ifelse(df_cvr$rating<3.5,"Should","Must"))
+df_cvr$compliance_cat<-ifelse(df_cvr$compliance<20,"Very Low",ifelse(df_cvr$compliance<50,"Low",ifelse(df_cvr$compliance<80,"Medium","High")))
+df_cvr$cat<-paste(substring(df_cvr$rating_cat, 1, 1),substring(df_cvr$compliance_cat, 1, 1),sep="")
+df_cvr$compliance_cat<-factor(df_cvr$compliance_cat, levels = c("Very Low","Low","Medium","High"))
+df_cvr$rating_cat<-factor(df_cvr$rating_cat, levels = c("Optional","Should","Must"))
+
+d_paper<-df_cvr[!is.na(df_cvr$rating),][c("miro_item_rating","rating","compliance","cat")]
+d_paper<-d_paper[order(-d_paper$compliance,-d_paper$rating),]
+#print(xtable(d_paper,digits=c(0,2,2,2,0)),include.rownames=FALSE)
+
+ct_cat<-plyr::count(d_paper$cat)
+ct_cat$pc<-round((ct_cat$freq/nrow(d_paper))*100,2)
+names(df_cvr)<-c("miro_item_rating", "Rating", "miro_item_comp", "mean_compliance", "Compliance", "Rating category", "Compliance category")
+ggplot(df_cvr,aes(y=Rating,x=Compliance,label=miro_item_comp,colour=`Rating category`)) + geom_point() +geom_text(aes(label=miro_item_comp),hjust=0.1, vjust=-0.6,  size=3) 
+ggsave(paste(chartdir,"scatter_compvrate.pdf",sep = ""), width = 12, height = 4)
+
+ggplot(df_cvr[!is.na(df_cvr$Rating),],aes(x=`Compliance category`,fill=`Rating category`)) + geom_bar()
+ggsave(paste(chartdir,"bar_cat_compvrate.pdf",sep = ""), width = 8, height = 2.5)
+```

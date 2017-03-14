@@ -1,0 +1,37 @@
+miro_item_rating,rating,miro_item_comp,mean_compliance,compliance
+Content: Development environment,2.878504673,Development.environment,0.733333333,73.33
+KA: Source knowledge location,3.357798165,Raw.data.location,0.266666667,26.67
+KA: Content selection,3.37962963,Feature.prioritisation,0.666666667,66.67
+Content: Ontology metrics,3.422018349,Ontology.metrics,0.8,80
+Content: Entity naming conventions,3.743119266,Entity.naming.convention,0.266666667,26.67
+SRD: Development community,3.768518519,Community,0.933333333,93.33
+Change: Versioning policy,3.798165138,Versioning.Policy,0.066666667,6.67
+SRD: Communication,3.798165138,Email.list.and.issue.tracking,0.4,40
+Change: Entity deprecation strategy,3.834862385,Entity.Deprecation.Strategy,0,0
+Motivation: Need,3.851851852,Need,1,100
+Content:  Identifier generation policy,3.862385321,Identifier.generation.policy,0.066666667,6.67
+QA: Testing,3.871559633,Testing,0.266666667,26.67
+Content: Upper ontology,3.880733945,Upper.ontology,0.666666667,66.67
+Content: Entity metadata policy,3.889908257,Entity.metadata.policy,0.333333333,33.33
+Change: Sustainability plan,3.889908257,Sustainability.plan,0,0
+KA: Source knowledge,3.926605505,Source.knowledge,0.8,80
+Motivation: Target audience,3.944954128,Target.Audience,1,100
+Motivation: Competition,3.963302752,Competition,0.8,80
+QA: Evaluation,3.990825688,Evaluation,0.666666667,66.67
+Basics: Ontology repository,4.009174312,Ontology.repository,0.533333333,53.33
+Content: Incorporation of other ontologies,4.091743119,Imports.and.interoperability,0.866666667,86.67
+Content: KR language,4.110091743,KR.language,1,100
+Content: Ontology relationships,4.128440367,Ontology.relationships,0.933333333,93.33
+SRD: Scope and coverage,4.148148148,Scope.and.Coverage,1,100
+QA: Examples of usage,4.19266055,Example.use,0.866666667,86.67
+Basics: Ontology license,4.504587156,Ontology.licence,0.266666667,26.67
+Basics: Ontology owner,4.527777778,Ontology.owner,1.066666667,53.33
+Basics: Ontology name,4.706422018,Ontology.name,1.8,90
+Basics: Ontology URL,4.71559633,Ontology.URL,0.933333333,93.33
+Content: Axiom patterns,3.796296,Axiom.patterns,1,100
+,,Dereferencable.IRIs,0.066666667,6.67
+,,Evidence.use,0.533333333,53.33
+,,Institution.Endorsement,0.066666667,6.67
+,,Logical.consistency,0.6,60
+,,OBO.Principles,0.6,60
+,,Methodological.framework,1,100

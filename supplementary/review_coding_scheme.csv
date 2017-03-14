@@ -1,0 +1,36 @@
+﻿Group,Code,Range
+Basic,Ontology name,0-2
+Basic,Ontology owner,0-2
+Basic,Ontology licence,0-1
+Basic,Ontology URL,0-1
+Basic,Ontology repository,0-1
+Basic,Methodological framework,0-1
+Motivation,Need,0-1
+Motivation,Competition,0-1
+Motivation,Target Audience,0-1
+"Scope, Requirements, Community",Scope and Coverage,0-1
+"Scope, Requirements, Community",Community,0-1
+"Scope, Requirements, Community",Email list and issue tracking,0-1
+Knowledge Elicitation,Source knowledge,0-1
+Knowledge Elicitation,Raw data location,0-1
+Knowledge Elicitation,Feature prioritisation,0-1
+Ontology Content,KR language,0-1
+Ontology Content,Development environment,0-1
+Ontology Content,Ontology metrics,0-1
+Ontology Content,Imports and interoperability,0-1
+Ontology Content,Entity naming convention,0-1
+Ontology Content,Identifier generation policy,0-1
+Ontology Content,Entity metadata policy,0-1
+Ontology Content,Upper ontology,0-1
+Ontology Content,Ontology relationships,0-1
+Ontology Content,Axiom patterns,0-1
+Ontology Content,Dereferencable IRIs,0-1
+Managing Change,Sustainability plan,0-1
+Managing Change,Entity Deprecation Strategy,0-1
+Managing Change,Versioning Policy,0-1
+Quality Assurance,Testing,0-1
+Quality Assurance,Evaluation,0-1
+Quality Assurance,Example use,0-1
+Quality Assurance,Institution Endorsement,0-1
+Quality Assurance,Logical consistency,0-1
+Quality Assurance,Evidence use,0-1

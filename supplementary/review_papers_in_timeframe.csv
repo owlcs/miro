@@ -1,0 +1,169 @@
+﻿Title,Journal
+Distantly Supervised Web Relation Extraction for Knowledge Base Population,SWJ
+Crowd-based Ontology Engineering with the uComp Protege Plugin,SWJ
+Inferring Recommendation Interactions in Clinical Guidelines ,SWJ
+DWRank: Learning Concept Ranking for Ontology Search,SWJ
+Quality-Based Model For Effective and Robust Multi-User Pay-As-You-Go Ontology Matching,SWJ
+Visualizing Ontologies with VOWL,SWJ
+From hyperlinks to Semantic Web properties using Open Knowledge Extraction,SWJ
+An OWL ontology library representing judicial interpretations,SWJ
+Semantic Model for Legal Resources: Annotation and Reasoning over Normative Provisions,SWJ
+LOTED2: An Ontology of European Public Procurement Notices,SWJ
+"PPROC, an Ontology for Transparency in Public Procurement",SWJ
+Overview of the MPEG-21 Media Contract Ontology,SWJ
+Scalable Long-term Preservation of Relational Data through SPARQL queries,SWJ
+Signal/Collect: Processing Large Graphs in Seconds,SWJ
+The Document Components Ontology (DoCO),SWJ
+The Open University Linked Data - data.open.ac.uk,SWJ
+EventMedia: a LOD Dataset of Events Illustrated with Media,SWJ
+Time Ontology Extended for Non-Gregorian Calendar Applications,SWJ
+SISSVoc: A Linked Data API for access to SKOS vocabularies,SWJ
+Query Answering over Contextualized RDF/OWL Knowledge with Forall-Existential Bridge Rules: Decidable Finite Extension Classes,SWJ
+Quality Assessment for Linked Data: A Survey,SWJ
+LinkedSpending: OpenSpending becomes Linked Open Data,SWJ
+Semantic Technologies for Historical Research: A Survey,SWJ
+A logical characterisation of SPARQL federation,SWJ
+Link Traversal Querying for a diverse Web of Data,SWJ
+Forest Logging: A Trace-Based Analysis of Large Rule-Based Computations,SWJ
+"Sound, Complete and Minimal UCQ-Rewriting for Existential Rules",SWJ
+Probabilistic Description Logics under the Distribution Semantics,SWJ
+Coupling conceptual modeling and rules for the annotation of dramatic media,SWJ
+Multilingual Linked Data Patterns,SWJ
+Semantic Quran: A Multilingual Resource for Natural-Language Processing,SWJ
+Countering language attrition with PanLex and the Web of Data,SWJ
+DBnary: Wiktionary as a Lemon-Based Multilingual Lexical Resource in RDF,SWJ
+PAROLE/SIMPLE ‘lemon’ ontology and lexicons,SWJ
+"lemonUby - a large, interlinked, syntactically-rich lexical resource for ontologies",SWJ
+OLiA – Ontologies of Linguistic Annotation,SWJ
+Converting the PAROLE SIMPLE CLIPS Lexicon into RDF with lemon,SWJ
+Lexvo.org: Language-Related Information for the Linguistic Linked Data Cloud,SWJ
+Using ontologies to model human navigation behavior in information networks: A study based on Wikipedia,SWJ
+"OntoWiki - An Authoring, Publication and Visualization Interface for the Data Web",SWJ
+Collaborative multilingual knowledge management based on controlled natural language,SWJ
+"WYSIWYM - Integrated Visualization, Exploration and Authoring of Semantically Enriched Un-structured Content",SWJ
+Affective Graphs: The Visual Appeal of Linked Data,SWJ
+Linked SDMX Data,SWJ
+Migrating Bibliographic Datasets to the Semantic Web: the AGRIS case,SWJ
+Geospatial Dataset Curation through a Location-based Game,SWJ
+The RÉPENER Linked Dataset,SWJ
+eagle-i: biomedical research resource datasets,SWJ
+Converting neXtProt into Linked Data and nanopublications,SWJ
+Public spending as LOD: the case of Greece,SWJ
+"DBpedia - A Large-scale, Multilingual Knowledge Base Extracted from Wikipedia",SWJ
+Solving Guesstimation Problems Using the Semantic Web: Four Lessons from an Application,SWJ
+The Humanitarian eXchange Language: Coordinating Disaster Response with Semantic Web Technologies,SWJ
+A Dialogue with Linked Data: Voice-based Access to Market Data in the Sahel,SWJ
+Resource-Constrained Reasoning Using a Reasoner Composition Approach,SWJ
+A Closer Look at the Semantic Relationship between Datalog and Description Logics,SWJ
+Defeasibility in Answer Set Programs with Defaults and Argumentation Rules,SWJ
+Building semantic trees from XML documents,JWS
+The Graph of Things: A step towards the Live Knowledge Graph of connected things,JWS
+A rule-based agent-oriented approach for supporting weakly-structured scientific workflows,JWS
+Faceted search over RDF-based knowledge graphs,JWS
+CohEEL: Coherent and efficient named entity linking through random walks,JWS
+RIQ: Fast processing of SPARQL queries on RDF quadruples,JWS
+Sar-graphs: A language resource connecting linguistic knowledge with semantic relations from knowledge graphs,JWS
+Building event-centric knowledge graphs from news,JWS
+Learning the semantics of structured data sources,JWS
+Contextualized ranking of entity types based on knowledge graphs,JWS
+Triple Pattern Fragments: A low-cost knowledge graph interface for the Web,JWS
+Semantic Web in data mining and knowledge discovery: A comprehensive survey,JWS
+Personalized concept-based search on the Linked Open Data,JWS
+A mobile query service for integrated access to large numbers of online semantic web data sources,JWS
+Semantic reasoning on mobile devices: Do Androids dream of efficient reasoners?,JWS
+Queries with negation and inequalities over lightweight ontologies,JWS
+The description logic SHIQ with a flexible meta-modelling hierarchy,JWS
+C3D+P: A summarization method for interactive entity resolution,JWS
+The rationale of PROV,JWS
+Mining the Web of Linked Data with RapidMiner,JWS
+DIVE into the event-based browsing of linked historical media,JWS
+The Mannheim Search Join Engine,JWS
+Using semantic data to improve cross-lingual linking of article clusters,JWS
+Substructure counting graph kernels for machine learning from RDF data,JWS
+DeFacto—Temporal and multilingual Deep Fact Validation,JWS
+An unsupervised instance matcher for schema-free RDF data,JWS
+Automatic acquisition of class disjointness,JWS
+LC3: A spatio-temporal and semantic model for knowledge discovery from geospatial datasets,JWS
+Querying and integrating spatial–temporal information on the Web of Data via time geography,JWS
+Sextant: Visualizing time-evolving linked geospatial data,JWS
+Exposing INSPIRE on the Semantic Web,JWS
+A bootstrapping approach to entity linkage on the Semantic Web,JWS
+Neighborhood-user profiling based on perception relationship in the micro-blog scenario,JWS
+SACI: Sentiment analysis by collective inspection on social media content,JWS
+A novel approach to generate MCQs from domain ontology: Considering DL semantics and open-world assumption,JWS
+Inconsistency-tolerant query answering in ontology-based data access,JWS
+Optimising resolution-based rewriting algorithms for OWL ontologies,JWS
+Temporalizing rewritable query languages over knowledge bases,JWS
+Temporal query entailment in the Description Logic SHQ,JWS
+Complexity of answering counting aggregate queries over DL-Lite,JWS
+Engineering ontology-based access to real-world data sources,JWS
+Efficient SPARQL-to-SQL with R2RML mappings,JWS
+The Data Mining OPtimization Ontology,JWS
+Using a suite of ontologies for preserving workflow-centric research objects,JWS
+Methodology for geospatial data source discovery in ontology-driven geo-information integration architectures,JWS
+On the formulation of performant SPARQL queries,JWS
+Mining various semantic relationships from unstructured user-generated web data,JWS
+WSMO-Lite and hRESTS: Lightweight semantic annotations for Web services and RESTful APIs,JWS
+Linked hypernyms: Enriching DBpedia with Targeted Hypernym Discovery,JWS
+Global machine learning for spatial ontology population,JWS
+Discovering and understanding word level user intent in Web search queries,JWS
+SINA: Semantic interpretation of user queries for question answering on interlinked data,JWS
+Mímir: An open-source semantic search framework for interactive information seeking and discovery,JWS
+Tailored semantic annotation for semantic search,JWS
+An overview of semantic search evaluation initiatives,JWS
+OntoStudyEdit: a new approach for ontology-based representation and management of metadata in clinical and epidemiological research,JBMS
+Ontology-based representation and analysis of host-Brucella interactions,JBMS
+My Corporis Fabrica Embryo: An ontology-based 3D spatio-temporal modeling of human embryo development,JBMS
+KneeTex: an ontology–driven system for information extraction from MRI reports,JBMS
+Identification of sex-associated network patterns in Vaccine-Adverse Event Association Network in VAERS,JBMS
+Improving the Sequence Ontology terminology for genomic variant annotation,JBMS
+A framework for ontology-based question answering with application to parasite immunology,JBMS
+Development of an Ontology for Periodontitis,JBMS
+Ambiguity and variability of database and software names in bioinformatics,JBMS
+Discovering relations between indirectly connected biomedical concepts,JBMS
+Sequential pattern mining for discovering gene interactions and their contextual information from biomedical texts,JBMS
+Region Evolution eXplorer – A tool for discovering evolution trends in ontology regions,JBMS
+Networks of neuroinjury semantic predications to identify biomarkers for mild traumatic brain injury,JBMS
+Concept selection for phenotypes and diseases using learn to rank,JBMS
+Developing VISO: Vaccine Information Statement Ontology for patient education,JBMS
+Formalizing biomedical concepts from textual definitions,JBMS
+Capturing domain knowledge from multiple sources: the rare bone disorders use case,JBMS
+Annotation-based feature extraction from sets of SBML models,JBMS
+Evaluating drug-drug interaction information in NDF-RT and DrugBank,JBMS
+Exploring adverse drug events at the class level,JBMS
+Linking gene expression to phenotypes via pathway information,JBMS
+Semantic enrichment of longitudinal clinical study data using the CDISC standards and the semantic statistics vocabularies,JBMS
+Automated concept and relationship extraction for the semi-automated ontology management (SEAM) system,JBMS
+Development and validation of a classification approach for extracting severity automatically from electronic health records,JBMS
+Using description logics to evaluate the consistency of drug-class membership relations in NDF-RT,JBMS
+Completing the is-a structure in light-weight ontologies,JBMS
+Expanding the mammalian phenotype ontology to support automated exchange of high throughput mouse phenotyping data generated by large-scale mouse knockout screens,JBMS
+eNanoMapper: harnessing ontologies to enable data integration for nanomaterial risk assessment,JBMS
+Evaluating a variety of text-mined features for automatic protein function prediction with GOstruct,JBMS
+Supporting the annotation of chronic obstructive pulmonary disease (COPD) phenotypes with text mining workflows,JBMS
+Nanopublications for exposing experimental data in the life-sciences: a Huntington’s Disease case study,JBMS
+Development and application of an interaction network ontology for literature mining of vaccine-associated gene-gene interactions,JBMS
+Database citation in supplementary data linked to Europe PubMed Central full text biomedical articles,JBMS
+The cellular microscopy phenotype ontology,JBMS
+Filtering large-scale event collections using a combination of supervised and unsupervised learning for event trigger classification,JBMS
+Extracting a stroke phenotype risk factor from Veteran Health Administration clinical reports: an information content analysis,JBMS
+OmniSearch: a semantic search system based on the Ontology for MIcroRNA Target (OMIT) for microRNA-target gene interaction data,JBMS
+The Non-Coding RNA Ontology (NCRO): a comprehensive resource for the unification of non-coding RNA biology,JBMS
+OBIB-a novel ontology for biobanking,JBMS
+Active learning for ontological event extraction incorporating named entity recognition and unknown word handling,JBMS
+VICO: Ontology-based representation and integrative analysis of Vaccination Informed Consent forms,JBMS
+Extending gene ontology in the context of extracellular RNA and vesicle communication,JBMS
+"MicrO: an ontology of phenotypic and metabolic characters, assays, and culture media found in prokaryotic taxonomic descriptions",JBMS
+Representing vision and blindness,JBMS
+Inferring gene-to-phenotype and gene-to-disease relationships at Mouse Genome Informatics: challenges and solutions,JBMS
+Trivalent influenza vaccine adverse symptoms analysis based on MedDRA terminology using VAERS data in 2011,JBMS
+Modularising ontology and designing inference patterns to personalise health condition assessment: the case of obesity,JBMS
+Extracting drug-enzyme relation from literature as evidence for drug drug interaction,JBMS
+Using Semantic Web technologies for the generation of domain-specific templates to support clinical study metadata standards,JBMS
+miRiaD: A Text Mining Tool for Detecting Associations of microRNAs with Diseases,JBMS
+Linking rare and common disease: mapping clinical disease-phenotypes to ontologies in therapeutic target validation,JBMS
+An accurate and precise representation of drug ingredients,JBMS
+Towards exergaming commons: composing the exergame ontology for publishing open game data,JBMS
+Interoperability between phenotypes in research and healthcare terminologies—Investigating partial mappings between HPO and SNOMED CT,JBMS
+Reporting phenotypes in mouse models when considering body size as a potential confounder,JBMS
+An ontology for major histocompatibility restriction,JBMS
