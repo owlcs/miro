@@ -1,5 +1,4 @@
-# The minimum information for the reporting of an ontology (MIRO) guidelines: 
-Supplementary Materials
+# The minimum information for the reporting of an ontology (MIRO) guidelines: Supplementary Materials
 
 ## Datasets: MIRO community feedback (questionnaire)	
 
