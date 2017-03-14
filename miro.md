@@ -103,7 +103,7 @@ This document contains the Minimum Information for Reporting of an Ontology (MIR
 |---|---|
 | **Description:** | The names and citations for other ontology or ontologies in the same general area as the one being reported upon, together with a description on why the one being reported is needed instead or in addition to the others. |
 | **Importance:** | MUST |
-| **Example:** | The background section of the paper "The Software Ontology (SWO): a resource for reproducibility in biomedical data analysis, curation and digital preservation" in JMBS 2014 describes other attempts to describe software in ontologies or vocabularies. See http://jbiomedsem.biomedcentral.com/articles/10.1186/2041-1480-5-25 |
+| **Example:** | The background section of the paper "The Software Ontology (SWO): a resource for reproducibility in biomedical data analysis, curation and digital preservation" in JBMS 2014 describes other attempts to describe software in ontologies or vocabularies. See http://jbiomedsem.biomedcentral.com/articles/10.1186/2041-1480-5-25 |
 ----
 
 ### Target audience
@@ -152,7 +152,7 @@ This document contains the Minimum Information for Reporting of an Ontology (MIR
 |---|---|
 | **Description:** | How the knowledge in the ontology was gathered, sorted, verified, etc. |
 | **Importance:** | MUST |
-| **Example:** | Description of the source knowledge in the materials and method section of the article for The Software Ontology (SWO): a resource for reproducibility in biomedical data analysis, curation and digital preservation in JMBS 2014 https://jbiomedsem.biomedcentral.com/articles/10.1186/2041-1480-5-25 |
+| **Example:** | Description of the source knowledge in the materials and method section of the article for The Software Ontology (SWO): a resource for reproducibility in biomedical data analysis, curation and digital preservation in JBMS 2014 https://jbiomedsem.biomedcentral.com/articles/10.1186/2041-1480-5-25 |
 ----
 
 ### Source knowledge location
