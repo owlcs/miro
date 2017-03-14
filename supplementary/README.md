@@ -1,6 +1,15 @@
 # The minimum information for the reporting of an ontology (MIRO) guidelines: 
 Supplementary Materials
 
+## Datasets: MIRO community feedback (questionnaire)	
+
+| Filename | Description |
+|---|---|
+| **questionnaire_responses.csv** | Anonymised questionnaire responses (without names and emails). |
+| **questionnaire_email_lists.csv** | The email lists we used to advertise the questionnaire / survey. |
+| **questionnaire_comment_coding.csv** | The coding of the free-form comments of the survey responses. |
+----
+
 ## Datasets: Paper review of MIRO compliance	
 
 | Filename | Description |
@@ -11,15 +20,6 @@ Supplementary Materials
 | **review_selected_papers.csv** | Papers selected for in-depth review. |
 | **review_coding_scheme.csv** | Coding scheme for data extraction. |
 | **review_extraction.csv** | Data extracted from all papers according to coding scheme. |
-----
-
-## Datasets: Paper review of MIRO compliance	
-
-| Filename | Description |
-|---|---|
-| **questionnaire_responses.csv** | Anonymised questionnaire responses (without names and emails). |
-| **questionnaire_email_lists.csv** | The email lists we used to advertise the questionnaire / survey. |
-| **questionnaire_comment_coding.csv** | The coding of the free-form comments of the survey responses. |
 ----
 
 ## Analysis: Executable analysis of data (R markdown)	
