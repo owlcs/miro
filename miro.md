@@ -2,6 +2,7 @@
 MIRO – Minimum Information for Reporting of an Ontology
 ==============
 </header>
+
 ## Working draft 12 March 2017
 
 **Editors**:
