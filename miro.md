@@ -80,7 +80,7 @@ This document contains the Minimum Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | A name or description of the steps taken to develop the ontology. This should describe the overall organisation of the ontology developed process. |
+| **Description:** | A name or description of the steps taken to develop the ontology. This should describe the overall organisation of the ontology development process. |
 | **Importance:** | MUST |
 | **Example:** | Methontology, On-To-Knowledge, Neon methodology. If no bespoke methodological framework was used, describe how the core activities of the ontology engineering lifecycle (such as ontology management, development and support) were addressed (http://onlinelibrary.wiley.com/doi/10.1002/047003033X.ch9/pdf). |
 ----
