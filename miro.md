@@ -17,11 +17,12 @@ Nicolas Matentzoglu, Manchester University
 
 | Version | Date | Contributors | Changes |
 |---|---|---|---|
-| 0.0.1 | 16.05.2016 | Robert Stevens, James Malone, Chris Mungall, Nicolas Matentzoglu | First version |
-| 0.0.2 | 27.05.2016 | James Malone|Review first version for wording and examples |
-| 0.0.3 | 28.06.2016 | Nicolas Matentzoglu | Unified capitalisation in Information Item names |
-| 0.0.4 | 02.12.2016 | James Malone | Add elucidation to items |
-| 0.0.5 | 12.03.2017 | Robert Stevens, James Malone, Chris Mungall, Nicolas Matentzoglu | First public release |
+| 0.1 | 16.05.2016 | Robert Stevens, James Malone, Chris Mungall, Nicolas Matentzoglu | First version |
+| 0.2 | 27.05.2016 | James Malone|Review first version for wording and examples |
+| 0.3 | 28.06.2016 | Nicolas Matentzoglu | Unified capitalisation in Information Item names |
+| 0.4 | 02.12.2016 | James Malone | Add elucidation to items |
+| 0.5 | 12.03.2017 | Robert Stevens, James Malone, Chris Mungall, Nicolas Matentzoglu | First public release |
+| 0.6 | 13.08.2017 | James Malone | Update to reflect reviews from submitted publication |
 ----
 
 # Summary 
@@ -29,9 +30,9 @@ This document contains the Minimum Information for Reporting of an Ontology (MIR
 
 # Guidelines
 
-## Basics
+## A. Basics
 
-### Ontology name
+### A.1 Ontology name
 
 |  | Specification |
 |---|---|
@@ -40,7 +41,7 @@ This document contains the Minimum Information for Reporting of an Ontology (MIR
 | **Example:** | Gene Ontology (GO), v2.13; Foundational Model of Anatomy Ontology (FMA), v4.22; |
 ----
 
-### Ontology owner
+### A.2 Ontology owner
 
 |  | Specification |
 |---|---|
@@ -49,7 +50,7 @@ This document contains the Minimum Information for Reporting of an Ontology (MIR
 | **Example:** | GO Administrators, go@geneontology.org |
 ----
 
-### Ontology license
+### A.3 Ontology license
 
 |  | Specification |
 |---|---|
@@ -58,7 +59,7 @@ This document contains the Minimum Information for Reporting of an Ontology (MIR
 | **Example:** | Creative Commons Attribution 3.0 (CC BY 3.0) |
 ----
 
-### Ontology URL
+### A.4 Ontology URL
 
 |  | Specification |
 |---|---|
@@ -67,7 +68,7 @@ This document contains the Minimum Information for Reporting of an Ontology (MIR
 | **Example:** | http://www.berkeleybop.org/ontologies/doid.owl |
 ----
 
-### Ontology repository
+### A.5 Ontology repository
 
 |  | Specification |
 |---|---|
@@ -76,7 +77,7 @@ This document contains the Minimum Information for Reporting of an Ontology (MIR
 | **Example:** | https://github.com/geneontology |
 ----
 
-### Methodological framework
+### A.6 Methodological framework
 
 |  | Specification |
 |---|---|
@@ -85,9 +86,9 @@ This document contains the Minimum Information for Reporting of an Ontology (MIR
 | **Example:** | Methontology, On-To-Knowledge, Neon methodology. If no bespoke methodological framework was used, describe how the core activities of the ontology engineering lifecycle (such as ontology management, development and support) were addressed (http://onlinelibrary.wiley.com/doi/10.1002/047003033X.ch9/pdf). |
 ----
 
-## Motivation
+## B. Motivation
 
-### Need
+### B.1 Need
 
 |  | Specification |
 |---|---|
@@ -96,7 +97,7 @@ This document contains the Minimum Information for Reporting of an Ontology (MIR
 | **Example:** | For example, the 2015 JBMS article "Unification of multi-species vertebrate anatomy ontologies for comparative biology in Uberon" has the following: "Here we present the unification of anatomy ontologies into Uberon, a single ontology resource that enables interoperability among disparate data and research groups." http://jbiomedsem.biomedcentral.com/articles/10.1186/2041-1480-5-21 |
 ----
 
-### Competition
+### B.2 Competition
 
 |  | Specification |
 |---|---|
@@ -105,7 +106,7 @@ This document contains the Minimum Information for Reporting of an Ontology (MIR
 | **Example:** | The background section of the paper "The Software Ontology (SWO): a resource for reproducibility in biomedical data analysis, curation and digital preservation" in JBMS 2014 describes other attempts to describe software in ontologies or vocabularies. See http://jbiomedsem.biomedcentral.com/articles/10.1186/2041-1480-5-25 |
 ----
 
-### Target audience
+### B.3 Target audience
 
 |  | Specification |
 |---|---|
@@ -114,9 +115,9 @@ This document contains the Minimum Information for Reporting of an Ontology (MIR
 | **Example:** | The Gene Ontology is used by curators of gene products to describe the major functional attributes of those gene products to provide a common language across species for describing the molecular function, biological process and cellular location of gene products. |
 ----
 
-## Scope, requirements, development community
+## C. Scope, requirements, development community
 
-### Scope and coverage
+### C.1 Scope and coverage
 
 |  | Specification |
 |---|---|
@@ -125,7 +126,7 @@ This document contains the Minimum Information for Reporting of an Ontology (MIR
 | **Example:** | From the Human Phenotype Ontology NAR 2013 article "human phenotypic abnormalities." https://academic.oup.com/nar/article-lookup/doi/10.1093/nar/gkt1026  |
 ----
 
-### Development community
+### C.2 Development community
 
 |  | Specification |
 |---|---|
@@ -134,7 +135,7 @@ This document contains the Minimum Information for Reporting of an Ontology (MIR
 | **Example:** | The Gene Ontology is developed by the Gene Ontology Consortium. |
 ----
 
-### Communication
+### C.3 Communication
 
 |  | Specification |
 |---|---|
@@ -143,9 +144,9 @@ This document contains the Minimum Information for Reporting of an Ontology (MIR
 | **Example:** | http://www.ebi.ac.uk/efo/submit.html |
 ----
 
-## Knowledge acquisition
+## D. Knowledge acquisition
 
-### Knowledge acquisition methodology
+### D.1 Knowledge acquisition methodology
 
 |  | Specification |
 |---|---|
@@ -154,7 +155,7 @@ This document contains the Minimum Information for Reporting of an Ontology (MIR
 | **Example:** | Description of the source knowledge in the materials and method section of the article for The Software Ontology (SWO): a resource for reproducibility in biomedical data analysis, curation and digital preservation in JBMS 2014 https://jbiomedsem.biomedcentral.com/articles/10.1186/2041-1480-5-25 |
 ----
 
-### Source knowledge location
+### D.2 Source knowledge location
 
 |  | Specification |
 |---|---|
@@ -163,7 +164,7 @@ This document contains the Minimum Information for Reporting of an Ontology (MIR
 | **Example:** | Description of data gathered such as found in https://softwareontology.wordpress.com/2011/04/04/an-agile-ontology/. Other examples may include the outputs from workshops, curating the literature for a field, crowd sourcing input and so on. |
 ----
 
-### Content selection
+### D.3 Content selection
 
 |  | Specification |
 |---|---|
@@ -172,9 +173,9 @@ This document contains the Minimum Information for Reporting of an Ontology (MIR
 | **Example:** | Description of the prioritisation process for the Software Ontology in https://softwareontology.wordpress.com/2011/04/04/an-agile-ontology/ |
 ----
 
-## Ontology content
+## E. Ontology content
 
-### Knowledge Representation language
+### E.1 Knowledge Representation language
 
 |  | Specification |
 |---|---|
@@ -183,7 +184,7 @@ This document contains the Minimum Information for Reporting of an Ontology (MIR
 | **Example:** | OWL version 2, EL profile. |
 ----
 
-### Development environment
+### E.2 Development environment
 
 |  | Specification |
 |---|---|
@@ -192,7 +193,7 @@ This document contains the Minimum Information for Reporting of an Ontology (MIR
 | **Example:** | Protégé, WebProtégé, TawnyOWL, TopBraid Composer, Swoop, etc. |
 ----
 
-### Ontology metrics
+### E.3 Ontology metrics
 
 |  | Specification |
 |---|---|
@@ -201,7 +202,7 @@ This document contains the Minimum Information for Reporting of an Ontology (MIR
 | **Example:** | From the Human Phenotype Ontology NAR 2013 article "Human Phenotype Ontology provides a structured, comprehensive and well-defined set of 10,088 classes (terms) describing human phenotypic abnormalities and 13,326 subclass relations between the HPO classes." https://academic.oup.com/nar/article-lookup/doi/10.1093/nar/gkt1026  |
 ----
 
-### Incorporation of other ontologies
+### E.4 Incorporation of other ontologies
 
 |  | Specification |
 |---|---|
@@ -210,7 +211,7 @@ This document contains the Minimum Information for Reporting of an Ontology (MIR
 | **Example:** | Import of Uberon core – extended version, 2016-05-11 release under the 'anatomical entity' class. |
 ----
 
-### Entity naming convention
+### E.5 Entity naming convention
 
 |  | Specification |
 |---|---|
@@ -219,7 +220,7 @@ This document contains the Minimum Information for Reporting of an Ontology (MIR
 | **Example:** | Open Biomedical Ontologies (OBO) Foundry naming conventions; see http://www.obofoundry.org/principles/fp-012-naming-conventions.html. |
 ----
 
-### Identifier generation policy
+### E.6 Identifier generation policy
 
 |  | Specification |
 |---|---|
@@ -228,7 +229,7 @@ This document contains the Minimum Information for Reporting of an Ontology (MIR
 | **Example:** | Incremental class number, using 10 digit number with ontology name as the prefix. |
 ----
 
-### Entity metadata policy
+### E.7 Entity metadata policy
 
 |  | Specification |
 |---|---|
@@ -238,7 +239,7 @@ This document contains the Minimum Information for Reporting of an Ontology (MIR
 |
 ----
 
-### Upper ontology
+### E.8 Upper ontology
 
 |  | Specification |
 |---|---|
@@ -247,7 +248,7 @@ This document contains the Minimum Information for Reporting of an Ontology (MIR
 | **Example:** | SUMO, BFO. The Ontology for Biomedical Investigations (OBI) paper <http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0154556> has a sentence "While each had its strengths and weaknesses, BFO was chosen due to its association with the nascent OBO Foundry"  in its discussion. |
 ----
 
-### Ontology relationships
+### E.9 Ontology relationships
 
 |  | Specification |
 |---|---|
@@ -256,7 +257,7 @@ This document contains the Minimum Information for Reporting of an Ontology (MIR
 | **Example:** | The schema.org relationships were imported and used. We used the OBO Relations Ontology. |
 ----
 
-### Axiom patterns 
+### E.10 Axiom patterns 
 
 |  | Specification |
 |---|---|
@@ -265,7 +266,7 @@ This document contains the Minimum Information for Reporting of an Ontology (MIR
 | **Example:** | The axiom patterns described in the Section "The Ontology"  for the Software Ontology in its JBMS paper (http://jbiomedsem.biomedcentral.com/articles/10.1186/2041-1480-5-25). Patterns can be presented as examples or in the form of axiom templates, such as a reference to an ontology design pattern (http://ontologydesignpatterns.org/wiki/Main_Page). |
 ----
 
-### Dereferenceable IRIs 
+### E.11 Dereferenceable IRIs 
 
 |  | Specification |
 |---|---|
@@ -274,9 +275,9 @@ This document contains the Minimum Information for Reporting of an Ontology (MIR
 | **Example:** | For example, http://purl.obolibrary.org/obo/GO_0006915 |
 ----
 
-## Managing Change
+## F. Managing Change
 
-### Sustainability plan 
+### F.1 Sustainability plan 
 
 |  | Specification |
 |---|---|
@@ -285,7 +286,7 @@ This document contains the Minimum Information for Reporting of an Ontology (MIR
 | **Example:** | Outline of sustainability plan, including method to sustain and who will be responsible. |
 ----
 
-### Entity deprecation strategy 
+### F.2 Entity deprecation strategy 
 
 |  | Specification |
 |---|---|
@@ -294,7 +295,7 @@ This document contains the Minimum Information for Reporting of an Ontology (MIR
 | **Example:** | The owl:DeprecatedClass; no class is deleted from the ontology, but deprecated classes are labelled as obsolete with an annotation property. |
 ----
 
-### Versioning policy
+### F.3 Versioning policy
 
 |  | Specification |
 |---|---|
@@ -303,9 +304,9 @@ This document contains the Minimum Information for Reporting of an Ontology (MIR
 | **Example:** | The Open Biomedical Ontologies Consortium has a versioning policy, see http://www.obofoundry.org/id-policy.html. This page states "Versions are named by a date in the following format: YYYY-MM-DD. For a given version of an ontology, the ontology should be accessible at the following URL, where <idspace> is replaced by the IDSPACE in lower case." and gives further elaboration. |
 ----
 
-## Quality Assurance
+## G. Quality Assurance
 
-### Testing
+### G.1 Testing
 
 |  | Specification |
 |---|---|
@@ -314,7 +315,7 @@ This document contains the Minimum Information for Reporting of an Ontology (MIR
 | **Example:** | Examples of competency questions that can be asked. Examples of inferences that can be made. Classification time using an appropriate reasoner: "The ontology was successfully classified by both Pellet 2.3.1 and HermiT 1.3.8 (i.e., is logically consistent) in less than 1 second. All classes in the ontology are satisfiable." |
 ----
 
-### Evaluation
+### G.2 Evaluation
 
 |  | Specification |
 |---|---|
@@ -323,7 +324,7 @@ This document contains the Minimum Information for Reporting of an Ontology (MIR
 | **Example:** | There is an evaluation described for the Emotion Ontology in the paper "Evaluating the Emotion Ontology through use in the self-reporting of emotional responses in an academic conference". http://jbiomedsem.biomedcentral.com/articles/10.1186/2041-1480-5-38 |
 ----
 
-### Example of use
+### G.3 Example of use
 
 |  | Specification |
 |---|---|
@@ -332,7 +333,7 @@ This document contains the Minimum Information for Reporting of an Ontology (MIR
 | **Example:** | to Table S1 in The Ontology for Biomedical Investigations article in PLoS One 2016 https://www.ncbi.nlm.nih.gov/pubmed/27128319 shows the projects using OBI. |
 ----
 
-### Institutional endorsement
+### G.4 Institutional endorsement
 
 |  | Specification |
 |---|---|
@@ -342,7 +343,7 @@ This document contains the Minimum Information for Reporting of an Ontology (MIR
 ----
 
 
-### Evidence of use
+### G.5 Evidence of use
 
 |  | Specification |
 |---|---|
